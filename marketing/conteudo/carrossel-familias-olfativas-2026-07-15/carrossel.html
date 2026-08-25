@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Carrossel — Famílias olfativas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+  body { background: #333; }
+
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 80px 60px;
+  }
+
+  .bg-black { background: #0A0A0A; color: #FAFAF7; }
+  .bg-white { background: #FFFFFF; color: #1A1A1A; }
+  .bg-orange { background: #FF6B00; color: #0A0A0A; }
+
+  .bg-photo {
+    color: #FAFAF7;
+    background-size: cover;
+    background-position: center;
+  }
+  .bg-photo .wordmark,
+  .bg-photo .counter { color: rgba(255,255,255,0.9); }
+  .bg-photo .counter { color: rgba(255,255,255,0.65); }
+  .bg-photo .kicker { color: #FF6B00; }
+  .bg-photo .rule { background: #FF6B00; }
+  .bg-photo .footer { border-top: 1px solid rgba(255,255,255,0.25); }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wordmark {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .bg-black .wordmark { color: rgba(255,255,255,0.9); }
+  .bg-orange .wordmark { color: rgba(10,10,10,0.85); }
+  .bg-white .wordmark { color: #1A1A1A; }
+
+  .counter {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+  }
+  .bg-black .counter { color: rgba(250,250,247,0.55); }
+  .bg-white .counter { color: rgba(26,26,26,0.5); }
+  .bg-orange .counter { color: rgba(10,10,10,0.6); }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 24px;
+  }
+  .bg-white .footer { border-top: 1px solid rgba(0,0,0,0.1); }
+  .bg-orange .footer { border-top: 1px solid rgba(10,10,10,0.15); }
+  .footer-handle { font-size: 17px; font-weight: 600; }
+  .footer-drag { font-size: 15px; font-weight: 600; letter-spacing: 0.08em; opacity: 0.7; }
+
+  .kicker {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: #FF6B00;
+  }
+  .bg-orange .kicker { color: #0A0A0A; }
+
+  .rule {
+    width: 70px;
+    height: 4px;
+    background: #FF6B00;
+    margin: 22px 0 26px;
+  }
+  .bg-orange .rule { background: #0A0A0A; }
+
+  .content { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+
+  h1 {
+    font-size: 88px;
+    font-weight: 900;
+    line-height: 1.0;
+    letter-spacing: -0.04em;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.06;
+    letter-spacing: -0.035em;
+  }
+
+  .subtitle {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.5;
+    opacity: 0.85;
+    max-width: 720px;
+  }
+
+  .body-text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.55;
+    margin-top: 28px;
+    max-width: 680px;
+    opacity: 0.9;
+  }
+
+  .capa-content { justify-content: center; }
+  .capa-content .kicker { margin-bottom: 26px; }
+
+  .cta-content { justify-content: center; align-items: center; text-align: center; }
+  .cta-content h1 { font-size: 58px; max-width: 800px; }
+  .cta-content .subtitle { margin: 34px auto 0; text-align: center; }
+  .cta-btn {
+    margin-top: 48px;
+    background: #0A0A0A;
+    color: #FAFAF7;
+    padding: 22px 44px;
+    border-radius: 100px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 — CAPA — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">01/07</div>
+  </div>
+  <div class="content capa-content">
+    <div class="kicker">Guia de perfume</div>
+    <h1>Todo perfume pertence a uma família de cheiro</h1>
+    <div class="subtitle">Aprenda a reconhecer as 4 famílias olfativas mais comuns</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 2 — conceito — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">02/07</div>
+  </div>
+  <div class="content">
+    <div class="kicker">O que é família olfativa</div>
+    <div class="rule"></div>
+    <h2>É o "grupo" de cheiro que classifica cada perfume</h2>
+    <div class="body-text">Assim como música tem gênero, perfume tem família. Ela define se o cheiro é mais leve, mais doce, mais quente ou mais floral.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 3 — família cítrica — foto -->
+<div class="slide bg-photo" style="background-image: linear-gradient(rgba(10,8,0,0.35), rgba(10,8,0,0.75)), url('fotos/citrica.png');">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">03/07</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Famílias olfativas</div>
+    <div class="rule"></div>
+    <h2>Cítrica: limão, laranja, bergamota</h2>
+    <div class="body-text">Cheiro leve e refrescante, ótimo pro dia a dia e pro calor. É a família mais fácil de reconhecer só de sentir.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 4 — família floral — foto -->
+<div class="slide bg-photo" style="background-image: linear-gradient(rgba(20,5,15,0.35), rgba(20,5,15,0.75)), url('fotos/floral.png');">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">04/07</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Famílias olfativas</div>
+    <div class="rule"></div>
+    <h2>Floral: rosa, jasmim, flor de laranjeira</h2>
+    <div class="body-text">Cheiro delicado e romântico. É a base da maioria dos perfumes femininos — e também aparece em versões unissex.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 5 — família amadeirada — foto -->
+<div class="slide bg-photo" style="background-image: linear-gradient(rgba(15,10,5,0.35), rgba(15,10,5,0.75)), url('fotos/amadeirada.png');">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">05/07</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Famílias olfativas</div>
+    <div class="rule"></div>
+    <h2>Amadeirada: sândalo, cedro, patchouli</h2>
+    <div class="body-text">Cheiro quente e envolvente, de madeira mesmo. É o que dá aquele fundo marcante que fica horas depois.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 6 — família gourmand — foto -->
+<div class="slide bg-photo" style="background-image: linear-gradient(rgba(15,8,0,0.35), rgba(15,8,0,0.78)), url('fotos/gourmand.png');">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">06/07</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Famílias olfativas</div>
+    <div class="rule"></div>
+    <h2>Gourmand: baunilha, caramelo, chocolate</h2>
+    <div class="body-text">Cheiro doce que lembra sobremesa. É a família favorita de quem gosta de um perfume mais chamativo e adocicado.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 7 — CTA FINAL — laranja -->
+<div class="slide bg-orange">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">07/07</div>
+  </div>
+  <div class="content cta-content">
+    <h1>Agora você entende de perfume tanto quanto de oferta boa</h1>
+    <div class="subtitle">A gente busca as melhores ofertas no Mercado Livre todo dia e manda pro grupo só o que vale.</div>
+    <div class="cta-btn">Entra no grupo →</div>
+  </div>
+  <div class="footer" style="justify-content: center; border-top: none;">
+    <div class="footer-handle">@pordentroperfumes</div>
+  </div>
+</div>
+
+<script>
+  const only = new URLSearchParams(location.search).get('slide');
+  if (only) {
+    document.querySelectorAll('.slide').forEach((el, i) => {
+      if (String(i + 1) !== only) el.style.display = 'none';
+    });
+  }
+</script>
+</body>
+</html>

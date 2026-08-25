@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Carrossel — Jeito certo de passar perfume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+  body { background: #333; }
+
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 80px 60px;
+  }
+
+  .bg-black { background: #0A0A0A; color: #FAFAF7; }
+  .bg-white { background: #FFFFFF; color: #1A1A1A; }
+  .bg-orange { background: #FF6B00; color: #0A0A0A; }
+
+  /* header row: logo/wordmark + page counter */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wordmark {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .bg-black .wordmark, .bg-orange .wordmark { color: rgba(255,255,255,0.9); }
+  .bg-orange .wordmark { color: rgba(10,10,10,0.85); }
+  .bg-white .wordmark { color: #1A1A1A; }
+  .logo-img { height: 40px; }
+
+  .counter {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+  }
+  .bg-black .counter { color: rgba(250,250,247,0.55); }
+  .bg-white .counter { color: rgba(26,26,26,0.5); }
+  .bg-orange .counter { color: rgba(10,10,10,0.6); }
+
+  /* footer */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 24px;
+  }
+  .bg-white .footer { border-top: 1px solid rgba(0,0,0,0.1); }
+  .bg-orange .footer { border-top: 1px solid rgba(10,10,10,0.15); }
+  .footer-handle { font-size: 17px; font-weight: 600; }
+  .footer-drag { font-size: 15px; font-weight: 600; letter-spacing: 0.08em; opacity: 0.7; }
+
+  .kicker {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #FF6B00;
+  }
+  .bg-orange .kicker { color: #0A0A0A; }
+
+  .rule {
+    width: 70px;
+    height: 4px;
+    background: #FF6B00;
+    margin: 22px 0 26px;
+  }
+  .bg-orange .rule { background: #0A0A0A; }
+
+  .content { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+
+  h1 {
+    font-size: 92px;
+    font-weight: 900;
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 66px;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+  }
+
+  .subtitle {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.5;
+    opacity: 0.85;
+    max-width: 720px;
+  }
+
+  .body-text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.55;
+    margin-top: 28px;
+    max-width: 680px;
+    opacity: 0.9;
+  }
+
+  .numeral {
+    font-size: 260px;
+    font-weight: 800;
+    color: #FF6B00;
+    line-height: 0.85;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+  }
+  .bg-orange .numeral { color: rgba(10,10,10,0.18); }
+  .bg-black .numeral, .bg-white .numeral { opacity: 0.95; }
+
+  /* CAPA specific */
+  .capa-content { justify-content: center; }
+  .capa-content .kicker { margin-bottom: 26px; }
+
+  /* CTA final */
+  .cta-content { justify-content: center; align-items: center; text-align: center; }
+  .cta-content .logo-img { height: 90px; margin-bottom: 44px; }
+  .cta-content h1 { font-size: 58px; max-width: 780px; }
+  .cta-content .subtitle { margin: 34px auto 0; text-align: center; }
+  .cta-btn {
+    margin-top: 48px;
+    background: #0A0A0A;
+    color: #FAFAF7;
+    padding: 22px 44px;
+    border-radius: 100px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 — CAPA — foto -->
+<div class="slide bg-black" style="background-image: linear-gradient(rgba(10,10,10,0.35), rgba(10,10,10,0.8)), url('foto-01-capa.png'); background-size: cover; background-position: center;">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">01/07</div>
+  </div>
+  <div class="content capa-content">
+    <div class="kicker">Guia rápido</div>
+    <h1>Você tá passando perfume do jeito errado e não sabia</h1>
+    <div class="subtitle">5 ajustes simples pra ele durar o dia inteiro</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 2 — NÚMERO 01 — foto -->
+<div class="slide bg-black" style="background-image: linear-gradient(rgba(10,10,10,0.45), rgba(10,10,10,0.85)), url('foto-02-onde-passar.png'); background-size: cover; background-position: center;">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">02/07</div>
+  </div>
+  <div class="content">
+    <div class="numeral">01</div>
+    <div class="kicker">Onde passar</div>
+    <div class="rule"></div>
+    <h2>Pulso, pescoço e atrás da orelha</h2>
+    <div class="body-text">Onde tem calor do corpo, o perfume evapora e espalha o cheiro. É ali que ele rende mais.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 3 — NÚMERO 02 — foto -->
+<div class="slide bg-black" style="background-image: linear-gradient(rgba(10,10,10,0.45), rgba(10,10,10,0.85)), url('foto-03-hidratante.png'); background-size: cover; background-position: center;">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">03/07</div>
+  </div>
+  <div class="content">
+    <div class="numeral">02</div>
+    <div class="kicker">Antes de passar</div>
+    <div class="rule"></div>
+    <h2>Hidrata a pele antes do perfume</h2>
+    <div class="body-text">Pele seca não segura fragrância. Um creme sem cheiro antes faz o perfume durar muito mais.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 4 — NÚMERO 03 — foto -->
+<div class="slide bg-black" style="background-image: linear-gradient(rgba(10,10,10,0.45), rgba(10,10,10,0.85)), url('foto-04-nao-esfrega.png'); background-size: cover; background-position: center;">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">04/07</div>
+  </div>
+  <div class="content">
+    <div class="numeral">03</div>
+    <div class="kicker">Não esfrega</div>
+    <div class="rule"></div>
+    <h2>Esfregar o pulso quebra o perfume</h2>
+    <div class="body-text">Parece que fixa mais, mas é o contrário: o atrito muda as moléculas e o cheiro degrada mais rápido.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 5 — NÚMERO 04 — foto -->
+<div class="slide bg-black" style="background-image: linear-gradient(rgba(10,10,10,0.35), rgba(10,10,10,0.8)), url('foto-05-distancia.png'); background-size: cover; background-position: center;">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">05/07</div>
+  </div>
+  <div class="content">
+    <div class="numeral">04</div>
+    <div class="kicker">Distância certa</div>
+    <div class="rule"></div>
+    <h2>Borrife de 15 a 20 cm de distância</h2>
+    <div class="body-text">Muito perto, o perfume concentra num ponto só e evapora rápido. De longe, ele cobre melhor a pele.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 6 — NÚMERO 05 — foto -->
+<div class="slide bg-black" style="background-image: linear-gradient(rgba(10,10,10,0.45), rgba(10,10,10,0.85)), url('foto-06-depois-banho.png'); background-size: cover; background-position: center;">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">06/07</div>
+  </div>
+  <div class="content">
+    <div class="numeral">05</div>
+    <div class="kicker">Depois do banho</div>
+    <div class="rule"></div>
+    <h2>O melhor momento é com a pele quente</h2>
+    <div class="body-text">Poro aberto segura mais fragrância. Perfume pós-banho dura muito mais que em cima da roupa fria.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 7 — CTA FINAL — fundo laranja -->
+<div class="slide bg-orange">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">07/07</div>
+  </div>
+  <div class="content cta-content">
+    <h1>Perfume bom não custa caro. Só custa achar a oferta certa.</h1>
+    <div class="subtitle">A gente garimpa o Mercado Livre todo dia e manda pro grupo só o que vale.</div>
+    <div class="cta-btn">Entra no grupo →</div>
+  </div>
+  <div class="footer" style="justify-content: center; border-top: none;">
+    <div class="footer-handle">@pordentroperfumes</div>
+  </div>
+</div>
+
+<script>
+  // usado só pra render: ?slide=N isola o slide N pra captura em PNG
+  const only = new URLSearchParams(location.search).get('slide');
+  if (only) {
+    document.querySelectorAll('.slide').forEach((el, i) => {
+      if (String(i + 1) !== only) el.style.display = 'none';
+    });
+  }
+</script>
+</body>
+</html>
