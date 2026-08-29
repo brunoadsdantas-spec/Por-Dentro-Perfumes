@@ -164,6 +164,6 @@ A gente garimpa o Mercado Livre todo dia e manda pro grupo só o que vale — o 
 
 - [ ] Mercado Livre (fonte das ofertas)
 - [ ] WhatsApp (canal principal de divulgação)
-- [ ] Automação de carrosséis
+- [x] Automação de carrosséis
 
 *(Marcar conforme for instalando os MCPs)*
