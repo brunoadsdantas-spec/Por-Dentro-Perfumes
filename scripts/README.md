@@ -12,8 +12,8 @@ Conforme você for ativando skills, isso aqui vai sendo populado. Lista do que c
 |---|---|---|
 | `/carrossel` (com foto IA) | `gerar-imagem.js` | Gera foto realista via OpenAI API (DALL-E 3) |
 | `/carrossel` (render PNG) | `render.js` (gerado por carrossel, fica na pasta do conteúdo) | Playwright tira screenshot 1080x1350 de cada slide |
-| `/aprovar-post` | `postar-instagram.js` | Publica carrossel no Instagram via Meta Graph API |
-| `/aprovar-post` | `postar-facebook.js` | Publica carrossel no Facebook via Meta Graph API |
+| `/aprovar-post` | `postar-instagram.js` | Publica carrossel no Instagram via Buffer API |
+| `/aprovar-post` | `postar-facebook.js` | (ainda não criado) Publicaria carrossel no Facebook via Buffer, mesmo padrão do Instagram |
 | `/anuncio-google` | (nenhum — gera CSV direto) | — |
 | `/relatorio-ads` | (lê CSV exportado das plataformas) | — |
 
@@ -26,11 +26,13 @@ A maioria dos scripts depende de:
 **.env** na raiz do projeto com as chaves de API:
 ```bash
 OPENAI_API_KEY=sk-...               # pra gerar-imagem.js
-META_PAGE_ACCESS_TOKEN=...          # pra postar-instagram.js + postar-facebook.js
-META_PAGE_ID=...
-META_IG_USER_ID=...
-SITE_URL=https://seudominio.com.br
+BUFFER_API_KEY=...                  # pra postar-instagram.js
+BUFFER_CHANNEL_ID=...
+SITE_URL=https://seuusuario.github.io/repo   # GitHub Pages, hospeda as imagens do carrossel
 ```
+
+Ver `marketing/automacao-buffer-setup.md` pro passo a passo completo de
+como conseguir essas chaves.
 
 **Playwright** (pra renderizar HTML em PNG):
 ```bash

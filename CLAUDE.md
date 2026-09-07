@@ -165,5 +165,6 @@ A gente garimpa o Mercado Livre todo dia e manda pro grupo só o que vale — o 
 - [ ] Mercado Livre (fonte das ofertas)
 - [ ] WhatsApp (canal principal de divulgação)
 - [x] Automação de carrosséis
+- [ ] Instagram via Buffer (postagem automática do carrossel — setup em `marketing/automacao-buffer-setup.md`, falta criar conta Buffer e preencher `.env`)
 
 *(Marcar conforme for instalando os MCPs)*

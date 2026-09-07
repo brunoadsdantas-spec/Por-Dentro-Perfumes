@@ -1,9 +1,9 @@
 ---
 name: aprovar-post
 description: >
-  Aprova e publica um post da fila — flipa o blog de draft pra published, copia os PNGs do
-  carrossel pro public folder do site, faz commit e push (Netlify/Vercel deploya), aguarda
-  o deploy, e posta o carrossel no Instagram + Facebook via Meta Graph API. Use quando o
+  Aprova e publica um post da fila — flipa o blog de draft pra published (se houver blog),
+  copia os PNGs do carrossel pra pasta pública do site, faz commit e push (GitHub Pages
+  publica), aguarda o deploy, e posta o carrossel no Instagram via Buffer. Use quando o
   usuário disser "aprovar post X", "publicar o post do tema Y", "/aprovar-post X", ou quando
   quiser disparar a publicação automática de um conteúdo já criado pela skill /publicar-tema.
 ---
@@ -22,16 +22,22 @@ e a publicação real no feed (site + Instagram + Facebook).
 ## Pré-requisitos (uma vez só)
 
 - `.env` na raiz com:
-  - `META_PAGE_ACCESS_TOKEN` — token de longa duração da Página FB
-  - `META_PAGE_ID` — ID da Página FB
-  - `META_IG_USER_ID` — ID da conta Insta Business
-  - `SITE_URL` — ex: `https://exemplo.com.br`
-- Site com deploy automático a partir do `main` do GitHub (Netlify, Vercel, etc.)
-- Conta Insta Business conectada à Página FB
-- Página FB com permissões corretas no Meta App
-- Scripts `scripts/postar-instagram.js` e `scripts/postar-facebook.js` configurados
+  - `BUFFER_API_KEY` — API key do Buffer
+  - `BUFFER_CHANNEL_ID` — ID do canal do Instagram dentro do Buffer
+  - `SITE_URL` — ex: `https://seuusuario.github.io/repo` (GitHub Pages)
+- Alguma forma de hospedar as imagens publicamente (GitHub Pages é o padrão
+  desse workspace)
+- Conta Instagram Business conectada ao Buffer
+- Script `scripts/postar-instagram.js` (já criado — ver `scripts/README.md`)
 
-Se algo disso faltar: parar e apontar pro guia de setup (criar `marketing/automacao-meta-setup.md` se ainda não existir).
+Se algo disso faltar: parar e apontar pro guia `marketing/automacao-buffer-setup.md`.
+(Existe um caminho alternativo via Meta Graph API direto, documentado em
+`marketing/automacao-meta-setup.md` — só relevante se a empresa tiver CNPJ
+verificado no Meta Business.)
+
+Esse workspace não tem blog — se `site/blog/` não existir, pular os passos
+1-3 e 6 (blog) e ir direto pro Passo 4 (copiar imagens) usando o slug da
+pasta de `marketing/conteudo/<slug>-<data>/`.
 
 ## Argumento
 
@@ -66,10 +72,10 @@ Perguntar: **"Confirma publicação? (sim/não)"**. Só seguir se ele disser sim
 
 Editar o frontmatter do blog: `draft: true` → `draft: false`.
 
-### Passo 4 — Copiar PNGs pro public folder do site
+### Passo 4 — Copiar PNGs pra pasta pública do site
 
 - Origem: `marketing/conteudo/<slug>-<data>/instagram/slide-*.png`
-- Destino: `site/.../public/img/posts/<slug>/slide-*.png`
+- Destino: `site/img/posts/<slug>/slide-*.png`
 - Criar pasta de destino se não existir
 - Sobrescrever se já existir (caso seja re-publicação)
 
@@ -97,7 +103,7 @@ Aguardar HTTP 200 (com timeout de 5 min). Também checar que pelo menos `slide-0
 curl -sf -o /dev/null -w "%{http_code}" "$SITE_URL/img/posts/$slug/slide-01.png"
 ```
 
-Sem isso, a Meta API vai falhar — ela busca a imagem por URL pública.
+Sem isso, a postagem vai falhar — o Buffer busca a imagem por URL pública.
 
 ### Passo 7 — Postar no Instagram
 
@@ -109,11 +115,10 @@ Capturar o post id retornado. Se falhar, **não seguir pra Facebook** — relata
 
 ### Passo 8 — Postar no Facebook
 
-```bash
-node --env-file=.env scripts/postar-facebook.js marketing/conteudo/<slug>-<data>
-```
-
-Capturar o post id retornado.
+Ainda não configurado (só o Instagram foi automatizado até agora). Quando
+precisar, é o mesmo padrão: criar canal do Facebook no Buffer, pegar o
+`BUFFER_CHANNEL_ID` dele, e um script equivalente ao `postar-instagram.js`
+apontando pra esse canal.
 
 ### Passo 9 — LinkedIn
 
