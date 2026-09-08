@@ -161,6 +161,7 @@ A gente vasculha o Mercado Livre todo dia e manda pro grupo só o que vale — o
 - Conteúdo novo salvar em `marketing/conteudo/<tipo>-<tema>-<data>/`
 - Qualquer peça visual (carrossel, post) segue `identidade/design-guide.md`
 - Divulgação é o gargalo #1 — priorizar automações e skills que atacam isso direto
+- Antes de afirmar se o carrossel do dia (ou qualquer rotina de nuvem) rodou, sempre dar `git pull` primeiro — a rotina agendada commita e dá push direto no GitHub, então o repositório local fica desatualizado e parece que nada foi feito
 
 ## Ferramentas conectadas
 
