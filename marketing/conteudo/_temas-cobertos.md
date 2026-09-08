@@ -1,0 +1,30 @@
+# Temas já cobertos — carrossel diário
+
+> Lido pela skill `/carrossel-diario` antes de pesquisar um tema novo, pra não repetir
+> assunto nem ângulo. Ordem: mais recente primeiro. Depois de publicar um carrossel novo,
+> adicionar uma linha no TOPO da seção "Cobertos".
+>
+> Formato: `- YYYY-MM-DD — slug-da-pasta — tema em uma frase — ângulo/observação`
+
+## Cobertos
+
+- 2026-07-17 — ocasioes-para-usar-perfume — Qual perfume usar em cada ocasião (dia a dia, praia, trabalho, date, balada, evento formal) — inclui slide de oferta real, não repetir estrutura de preço sem dado real
+- 2026-07-15 — familias-olfativas — Famílias olfativas explicadas (cítrica, amadeirada, oriental, floral etc.)
+- 2026-07-15 — notas-de-perfume — Notas de perfume (topo/coração/fundo)
+- 2026-07-14 — notas-e-cheiros-dos-perfumes — Notas e fases do cheiro do perfume — MESMO TEMA do item acima, duplicado por engano. Exemplo do que NÃO fazer: não cobrir "notas de perfume" de novo tão cedo, nem com título diferente pro mesmo conteúdo.
+- 2026-07-08 — formas-de-passar-perfume — Como e onde aplicar perfume pra durar mais
+
+## Regra de frescor (como decidir se um tema é novo)
+
+1. Ler essa lista inteira antes de pesquisar.
+2. Um tema só é válido se não aparecer aqui nem no "tema", nem no "ângulo" — mesmo com
+   título diferente (ex: "notas de perfume" e "fases do cheiro" contam como o MESMO tema,
+   ver os dois itens duplicados acima).
+3. Preferir dúvidas reais de quem compra perfume no Mercado Livre: original x falsificado,
+   perfume importado x nacional, decant x frasco fechado, contratipo/similar (vale a pena?),
+   tamanho de frasco ideal, perfume que "gruda"/dura mais, presente de perfume, perfume por
+   estação/clima, erros comuns ao comprar perfume online, como perfume nichado se compara
+   ao "de loja". Sempre amarrando no ângulo custo-benefício + Mercado Livre.
+4. Depois de publicar, adicionar a linha nova no topo da seção "Cobertos" com a data de
+   hoje, o slug da pasta criada, o tema em uma frase e o ângulo usado (pra facilitar a
+   checagem de futuras rodadas).

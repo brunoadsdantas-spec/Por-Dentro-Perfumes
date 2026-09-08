@@ -19,6 +19,13 @@ e a publicação real no feed (site + Instagram + Facebook).
 - Usuário ainda está revisando → não rodar até ele dizer "aprovado" / "pode postar"
 - Site não está deployado / Meta API não configurada → seguir setup abaixo
 
+## Nota — conteúdo gerado pela rotina diária
+
+Conteúdo em `marketing/conteudo/` pode ter sido criado remotamente pela rotina agendada
+`/carrossel-diario` (agente de nuvem, roda 1x/dia, faz commit + push direto no GitHub).
+Se estiver revisando localmente, rode `git pull` antes de procurar a pasta do slug —
+senão o carrossel pode existir no GitHub mas ainda não no seu clone local.
+
 ## Pré-requisitos (uma vez só)
 
 - `.env` na raiz com:
