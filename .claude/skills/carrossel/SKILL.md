@@ -87,14 +87,14 @@ Paleta sóbria: fundo dark + off-white + **UMA** cor de destaque. Nunca quatro c
 
 Vocabulário de layout — cada slide tem um nome. Variar entre eles pra criar ritmo:
 
-- **CAPA** — eyebrow + título grande + subtítulo + @handle. Fundo: foto com gradient overlay (`rgba(12,10,9,0.55)` → `rgba(12,10,9,0.85)`) OU sólido (escuro/claro/destaque)
+- **CAPA** — eyebrow + título grande + subtítulo + @handle. Fundo: foto com gradient overlay (`rgba(12,10,9,0.55)` → `rgba(12,10,9,0.85)`) OU sólido (escuro/claro — nunca cor de destaque/laranja, reservada pro CTA final)
 - **SOLO** — split horizontal: foto à esquerda 50% + texto à direita 50% (kicker + h2 + régua + parágrafo)
 - **DUO** — texto em cima (kicker + h2 + régua + p) + 2 fotos lado a lado embaixo (ou 1 foto larga)
 - **NÚMERO** — numeral gigante (200-320px, weight 800, cor de destaque) como elemento gráfico + h2 + parágrafo de apoio
 - **CITAÇÃO** — aspas grandes em watermark + frase em h2 + atribuição
 - **CTA FINAL** — fundo na cor de destaque, logo centralizado, headline curta, botão/CTA, telefone/@handle
 
-**Ritmo de slide a slide:** alternar fundo escuro ↔ claro ↔ destaque. Nunca dois slides seguidos com o mesmo fundo.
+**Ritmo de slide a slide:** alternar fundo escuro ↔ claro entre capa e slides internos. Nunca dois slides seguidos com o mesmo fundo. Cor de destaque (laranja) é exclusiva do slide final (CTA) — nunca usar em capa ou slide interno.
 
 ---
 
@@ -111,11 +111,14 @@ Antes de criar HTML: ler `identidade/design-guide.md`. Se estiver em branco, usa
 
 Antes de definir a capa, considerar a **última capa publicada** pra alternar:
 - claro → próxima é foto/escuro
-- foto/escuro → próxima é cor da marca
-- cor da marca → próxima é claro
+- foto/escuro → próxima é claro
 - nunca duas capas iguais em sequência
 
 Se o usuário não souber qual foi a última, perguntar.
+
+**Regra fixa (não alternar pra isso):** laranja nunca é cor de capa nem de slide
+interno — é reservado exclusivamente pro slide final (CTA). Ver
+`identidade/design-guide.md` → "O que NUNCA fazer".
 
 ### Linguagem (regra crítica)
 

@@ -8,6 +8,7 @@
 
 ## Cobertos
 
+- 2026-09-07 — erros-comprar-perfume-mercado-livre — Erros comuns ao comprar perfume no Mercado Livre (foto do anúncio, lacre, avaliações, contratipo x original, código de lote, vendedor sem histórico) — ângulo de segurança/confiança na compra, gerado pelo teste manual do /carrossel-diario
 - 2026-07-17 — ocasioes-para-usar-perfume — Qual perfume usar em cada ocasião (dia a dia, praia, trabalho, date, balada, evento formal) — inclui slide de oferta real, não repetir estrutura de preço sem dado real
 - 2026-07-15 — familias-olfativas — Famílias olfativas explicadas (cítrica, amadeirada, oriental, floral etc.)
 - 2026-07-15 — notas-de-perfume — Notas de perfume (topo/coração/fundo)

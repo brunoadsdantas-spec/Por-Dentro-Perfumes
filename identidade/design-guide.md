@@ -49,6 +49,9 @@ Visual editorial de "grupo de ofertas" — kicker em caixa alta com tracking lar
 
 - Não usar linguagem genérica de anúncio nos textos dos slides
 - Não fugir da paleta preto/branco/laranja
+- Nunca usar laranja como fundo de um slide que não seja o último do carrossel (CTA
+  final). Capa e slides internos são sempre preto ou branco — laranja é reservado
+  exclusivamente pro fechamento.
 
 ---
 
