@@ -4,7 +4,7 @@
 
 ## Tom de voz
 
-Direto e humano, sem enrolação. Frases curtas, quase bordão — ex: "Perfume bom não custa caro. Só custa achar a oferta certa. É por isso que existe a Por Dentro Perfumes: a gente garimpa o mercado livre todo dia e manda pro grupo só o que vale." Ritmo de conversa real, não de anúncio institucional — afirma, contrasta, entrega o benefício sem rodeio.
+Direto e humano, sem enrolação. Frases curtas, quase bordão — ex: "Perfume bom não custa caro. Só custa achar a oferta certa. É por isso que existe a Por Dentro Perfumes: a gente vasculha o mercado livre todo dia e manda pro grupo só o que vale." Ritmo de conversa real, não de anúncio institucional — afirma, contrasta, entrega o benefício sem rodeio.
 
 ## O que evitar
 

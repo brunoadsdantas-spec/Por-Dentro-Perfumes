@@ -120,7 +120,7 @@ Quando o usuário pedir skill nova:
 
 ## O que é esse workspace
 
-Operação da Por Dentro Perfumes (@pordentroperfumes): garimpo de ofertas de perfume no Mercado Livre e divulgação via programa de afiliados, principalmente pelo grupo de WhatsApp.
+Operação da Por Dentro Perfumes (@pordentroperfumes): busca de ofertas de perfume no Mercado Livre e divulgação via programa de afiliados, principalmente pelo grupo de WhatsApp.
 
 **Estrutura de pastas:**
 - `_memoria/` — quem eu sou, como falo, o que tá em foco
@@ -129,10 +129,12 @@ Operação da Por Dentro Perfumes (@pordentroperfumes): garimpo de ofertas de pe
 - `saidas/` — análises, documentos pontuais
 - `dados/` — arquivos a analisar (CSV, PDF, planilha)
 - `scripts/` — utilitários (gerar imagem, postar, render)
+- `site/` — página estática publicada via GitHub Pages; também hospeda publicamente as imagens dos carrosséis (`site/img/posts/<slug>/`) pro Buffer conseguir buscá-las
+- `templates/` — modelos base (skills, documentos)
 
 ## Quem sou
 
-Sou a Por Dentro Perfumes. Garimpo ofertas raras de perfume com ótimo custo-benefício no Mercado Livre e mando pronto pro grupo de WhatsApp — o cliente não perde tempo procurando.
+Sou a Por Dentro Perfumes. Busco ofertas raras de perfume com ótimo custo-benefício no Mercado Livre e mando pronto pro grupo de WhatsApp — o cliente não perde tempo procurando.
 
 ## O que produzo
 
@@ -152,7 +154,7 @@ Evitar: linguagem desumanizada e genérica, clichê de anúncio.
 
 ## Posicionamento
 
-A gente garimpa o Mercado Livre todo dia e manda pro grupo só o que vale — o cliente não procura nada, só aproveita.
+A gente vasculha o Mercado Livre todo dia e manda pro grupo só o que vale — o cliente não procura nada, só aproveita.
 
 ## Regras do sistema
 
@@ -165,6 +167,8 @@ A gente garimpa o Mercado Livre todo dia e manda pro grupo só o que vale — o 
 - [ ] Mercado Livre (fonte das ofertas)
 - [ ] WhatsApp (canal principal de divulgação)
 - [x] Automação de carrosséis
-- [ ] Instagram via Buffer (postagem automática do carrossel — setup em `marketing/automacao-buffer-setup.md`, falta criar conta Buffer e preencher `.env`)
+- [x] GitHub + GitHub Pages — repositório próprio (`brunoadsdantas-spec/Por-Dentro-Perfumes`) que versiona o workspace e publica as imagens dos carrosséis numa URL pública
+- [x] Instagram via Buffer — `.env` preenchido, canal conectado, `scripts/postar-instagram.js` pronto. Falta só o primeiro post real pra validar de ponta a ponta
+- [x] Rotina `/carrossel-diario` — agente de nuvem agendado, roda 13h todo dia, pesquisa tema e gera um carrossel novo pra revisão humana (nunca posta sozinho)
 
 *(Marcar conforme for instalando os MCPs)*
