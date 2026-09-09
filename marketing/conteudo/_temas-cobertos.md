@@ -8,6 +8,7 @@
 
 ## Cobertos
 
+- 2026-09-09 — carrossel-perfume-importado-x-nacional — Importado x nacional, qual vale mais a pena (concentração/fixação, custo-benefício do nacional no dia a dia, projeção do importado em ocasião especial, cuidado com anúncio que só diz "importado", ter os dois no armário) — ângulo custo-benefício + Mercado Livre, gerado pela rotina automática /carrossel-diario
 - 2026-09-08 — carrossel-decant-ou-frasco-fechado — Decant ou frasco fechado, qual vale mais a pena (o que é decant, quando testar em decant, quando investir no frasco cheio, cuidado com vendedor) — ângulo custo-benefício + Mercado Livre, gerado pela rotina automática /carrossel-diario
 - 2026-09-07 — erros-comprar-perfume-mercado-livre — Erros comuns ao comprar perfume no Mercado Livre (foto do anúncio, lacre, avaliações, contratipo x original, código de lote, vendedor sem histórico) — ângulo de segurança/confiança na compra, gerado pelo teste manual do /carrossel-diario
 - 2026-07-17 — ocasioes-para-usar-perfume — Qual perfume usar em cada ocasião (dia a dia, praia, trabalho, date, balada, evento formal) — inclui slide de oferta real, não repetir estrutura de preço sem dado real
