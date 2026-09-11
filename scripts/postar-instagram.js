@@ -2,6 +2,10 @@
 //
 // Uso:
 //   node --env-file=.env scripts/postar-instagram.js marketing/conteudo/<pasta-do-carrossel>
+//   node --env-file=.env scripts/postar-instagram.js <pasta> --em "2026-09-11T20:00"
+//
+// Sem --em, entra na fila do Buffer (publica no proximo horario configurado la).
+// Com --em, agenda pra data e hora exatas, no fuso de Brasilia (UTC-3).
 //
 // Espera encontrar dentro da pasta:
 //   - instagram/slide-01.png, slide-02.png, ... (2 a 10 imagens)
@@ -45,6 +49,23 @@ async function bufferGraphQL(apiKey, query, variables) {
   return data.data;
 }
 
+// Brasil nao tem mais horario de verao desde 2019, entao Brasilia e UTC-3 o ano todo.
+const OFFSET_BRASILIA_HORAS = 3;
+
+function horarioBrasiliaParaISO(texto) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})[T ](\d{2}):(\d{2})$/.exec(texto.trim());
+  if (!m) {
+    throw new Error(`Horario invalido: "${texto}". Use o formato 2026-09-11T20:00`);
+  }
+  const [, ano, mes, dia, hora, min] = m.map(Number);
+  const utc = Date.UTC(ano, mes - 1, dia, hora + OFFSET_BRASILIA_HORAS, min, 0);
+  const data = new Date(utc);
+  if (data.getTime() <= Date.now()) {
+    throw new Error(`O horario ${texto} (Brasilia) ja passou. Escolha um horario futuro.`);
+  }
+  return data.toISOString();
+}
+
 function listSlides(pastaCarrossel) {
   const instagramDir = path.join(pastaCarrossel, "instagram");
   if (!fs.existsSync(instagramDir)) {
@@ -70,7 +91,7 @@ function lerLegenda(pastaCarrossel) {
   return fs.readFileSync(legendaPath, "utf-8").trim();
 }
 
-async function criarPost(apiKey, channelId, caption, imageUrls) {
+async function criarPost(apiKey, channelId, caption, imageUrls, dueAt) {
   const query = `
     mutation CreatePost($input: CreatePostInput!) {
       createPost(input: $input) {
@@ -86,15 +107,30 @@ async function criarPost(apiKey, channelId, caption, imageUrls) {
       }
     }
   `;
-  const variables = {
-    input: {
-      text: caption,
-      channelId,
-      schedulingType: "automatic",
-      mode: "addToQueue",
-      assets: imageUrls.map((url) => ({ image: { url } })),
+  // Valores conferidos por introspeccao do schema do Buffer (set/2026):
+  //   ShareMode      = addToQueue, customScheduled, shareNext, shareNow
+  //   SchedulingType = automatic, notification
+  // O tipo do post de Instagram vive em metadata.instagram.type, nao na raiz.
+  const input = {
+    text: caption,
+    channelId,
+    needsApproval: false,
+    schedulingType: "automatic",
+    assets: imageUrls.map((url) => ({ image: { url } })),
+    metadata: {
+      instagram: {
+        type: "post",
+        shouldShareToFeed: true,
+      },
     },
   };
+  if (dueAt) {
+    input.mode = "customScheduled";
+    input.dueAt = dueAt;
+  } else {
+    input.mode = "addToQueue";
+  }
+  const variables = { input };
   const data = await bufferGraphQL(apiKey, query, variables);
   const result = data.createPost;
   if (result.message) {
@@ -104,11 +140,19 @@ async function criarPost(apiKey, channelId, caption, imageUrls) {
 }
 
 async function main() {
-  const pastaCarrossel = process.argv[2];
+  const args = process.argv.slice(2);
+  const pastaCarrossel = args.find((a) => !a.startsWith("--"));
   if (!pastaCarrossel) {
-    console.error("Uso: node scripts/postar-instagram.js <pasta-do-carrossel>");
+    console.error("Uso: node scripts/postar-instagram.js <pasta-do-carrossel> [--em 2026-09-11T20:00]");
     process.exit(1);
   }
+  const idxEm = args.indexOf("--em");
+  const horarioBrasilia = idxEm !== -1 ? args[idxEm + 1] : null;
+  if (idxEm !== -1 && !horarioBrasilia) {
+    console.error("--em precisa de um horario. Ex: --em 2026-09-11T20:00");
+    process.exit(1);
+  }
+  const dueAt = horarioBrasilia ? horarioBrasiliaParaISO(horarioBrasilia) : null;
 
   const apiKey = envOrFail("BUFFER_API_KEY");
   const channelId = envOrFail("BUFFER_CHANNEL_ID");
@@ -122,11 +166,19 @@ async function main() {
   console.log(`Carrossel: ${slides.length} slides, pasta "${pastaCarrossel}"`);
   imageUrls.forEach((url) => console.log(`  - ${url}`));
 
-  console.log("Criando post no Buffer (fila)...");
-  const post = await criarPost(apiKey, channelId, legenda, imageUrls);
+  if (dueAt) {
+    console.log(`Agendando no Buffer para ${horarioBrasilia} (Brasília) = ${dueAt} UTC...`);
+  } else {
+    console.log("Criando post no Buffer (fila)...");
+  }
+  const post = await criarPost(apiKey, channelId, legenda, imageUrls, dueAt);
 
   console.log(`\nEnviado pro Buffer! Post ID: ${post.id}`);
-  console.log("Vai publicar no próximo horário da fila do Instagram configurado no Buffer.");
+  if (dueAt) {
+    console.log(`Agendado para ${horarioBrasilia}, horário de Brasília.`);
+  } else {
+    console.log("Vai publicar no próximo horário da fila do Instagram configurado no Buffer.");
+  }
 }
 
 main().catch((err) => {
