@@ -13,7 +13,8 @@
 > **Revisão humana (2026-09-10, 2ª rodada):** adicionado o slide 3 com exemplo clássico
 > (original x contratipo + preço). Os fundos dos slides seguintes foram invertidos pra
 > manter a alternância preto/branco. Carrossel foi de 7 pra 8 slides.
-> **Preços do slide 3 pendentes de confirmação com preço real do Mercado Livre.**
+> Preços do slide 3 confirmados pelo usuário em 2026-09-10 com anúncio real do
+> Mercado Livre (Armaf 105 ml).
 
 ## Slide 1 — CAPA (preto)
 
@@ -32,9 +33,9 @@
 **Kicker:** Exemplo clássico
 **H2:** O mesmo perfil, dois preços
 **Comparação:**
-- Original: Creed Aventus — R$ 3.200
-- Contratipo: Armaf Club de Nuit Intense Man — R$ 280 (preço em laranja)
-**Nota:** Preço médio no Mercado Livre em set/2026. O cheiro é parecido na largada, mas a fixação e a projeção não são as mesmas.
+- Original: Creed Aventus — R$ 3.500
+- Contratipo: Armaf Club de Nuit Intense Man — R$ 215 (preço em laranja)
+**Nota:** Preços encontrados no Mercado Livre em set/2026. O cheiro é parecido na largada, mas a fixação e a projeção não são as mesmas.
 
 ## Slide 4 — Onde ele ganha (branco)
 
