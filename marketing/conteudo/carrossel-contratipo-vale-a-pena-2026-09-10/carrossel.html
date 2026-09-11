@@ -133,6 +133,40 @@
     letter-spacing: 0.04em;
     opacity: 0.75;
   }
+  .compare { margin-top: 36px; }
+  .compare-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 28px;
+    padding: 28px 0;
+    border-top: 1px solid rgba(250,250,247,0.18);
+  }
+  .bg-white .compare-row { border-top: 1px solid rgba(26,26,26,0.14); }
+  .compare-left { display: flex; flex-direction: column; gap: 10px; }
+  .compare-tag {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    opacity: 0.55;
+  }
+  .compare-name { font-size: 31px; font-weight: 700; line-height: 1.18; }
+  .compare-price {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+  }
+  .compare-price.destaque { color: #FF6B00; }
+  .compare-note {
+    margin-top: 28px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    opacity: 0.7;
+    max-width: 760px;
+  }
 </style>
 </head>
 <body>
@@ -141,7 +175,7 @@
 <div class="slide bg-black">
   <div class="header">
     <div class="wordmark">Por Dentro Perfumes</div>
-    <div class="counter">01/07</div>
+    <div class="counter">01/08</div>
   </div>
   <div class="content capa-content">
     <div class="kicker">Perfume no Mercado Livre</div>
@@ -158,7 +192,7 @@
 <div class="slide bg-white">
   <div class="header">
     <div class="wordmark">Por Dentro Perfumes</div>
-    <div class="counter">02/07</div>
+    <div class="counter">02/08</div>
   </div>
   <div class="content">
     <div class="kicker">O que é</div>
@@ -172,11 +206,45 @@
   </div>
 </div>
 
-<!-- SLIDE 3 — Onde ele ganha — preto -->
+<!-- SLIDE 3 — Exemplo classico — preto -->
 <div class="slide bg-black">
   <div class="header">
     <div class="wordmark">Por Dentro Perfumes</div>
-    <div class="counter">03/07</div>
+    <div class="counter">03/08</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Exemplo clássico</div>
+    <div class="rule"></div>
+    <h2>O mesmo perfil, dois preços</h2>
+    <div class="compare">
+      <div class="compare-row">
+        <div class="compare-left">
+          <div class="compare-tag">Original</div>
+          <div class="compare-name">Creed Aventus</div>
+        </div>
+        <div class="compare-price">R$ 3.200</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-left">
+          <div class="compare-tag">Contratipo</div>
+          <div class="compare-name">Armaf Club de Nuit Intense Man</div>
+        </div>
+        <div class="compare-price destaque">R$ 280</div>
+      </div>
+    </div>
+    <div class="compare-note">Preço médio no Mercado Livre em set/2026. O cheiro é parecido na largada, mas a fixação e a projeção não são as mesmas.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 4 — Onde ele ganha — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">04/08</div>
   </div>
   <div class="content">
     <div class="kicker">Onde ele ganha</div>
@@ -190,11 +258,11 @@
   </div>
 </div>
 
-<!-- SLIDE 4 — Onde ele perde — branco -->
-<div class="slide bg-white">
+<!-- SLIDE 5 — Onde ele perde — preto -->
+<div class="slide bg-black">
   <div class="header">
     <div class="wordmark">Por Dentro Perfumes</div>
-    <div class="counter">04/07</div>
+    <div class="counter">05/08</div>
   </div>
   <div class="content">
     <div class="kicker">Onde ele perde</div>
@@ -208,11 +276,11 @@
   </div>
 </div>
 
-<!-- SLIDE 5 — Fica esperto — preto -->
-<div class="slide bg-black">
+<!-- SLIDE 6 — Fica esperto — branco -->
+<div class="slide bg-white">
   <div class="header">
     <div class="wordmark">Por Dentro Perfumes</div>
-    <div class="counter">05/07</div>
+    <div class="counter">06/08</div>
   </div>
   <div class="content">
     <div class="kicker">Fica esperto</div>
@@ -226,11 +294,11 @@
   </div>
 </div>
 
-<!-- SLIDE 6 — Regra prática — branco -->
-<div class="slide bg-white">
+<!-- SLIDE 7 — Regra prática — preto -->
+<div class="slide bg-black">
   <div class="header">
     <div class="wordmark">Por Dentro Perfumes</div>
-    <div class="counter">06/07</div>
+    <div class="counter">07/08</div>
   </div>
   <div class="content">
     <div class="kicker">Regra prática</div>
@@ -246,11 +314,11 @@
 
 
 
-<!-- SLIDE 7 — CTA FINAL — laranja -->
+<!-- SLIDE 8 — CTA FINAL — laranja -->
 <div class="slide bg-orange">
   <div class="header">
     <div class="wordmark">Por Dentro Perfumes</div>
-    <div class="counter">07/07</div>
+    <div class="counter">08/08</div>
   </div>
   <div class="content cta-content">
     <h1>Contratipo tem seu lugar. Só não confunda com o importado que ele imita</h1>
