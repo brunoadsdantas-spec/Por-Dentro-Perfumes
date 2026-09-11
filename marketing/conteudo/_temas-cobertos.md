@@ -17,6 +17,7 @@
 
 ## Cobertos
 
+- [na fila] 2026-09-11 — carrossel-perfume-nichado-x-grife — Nicho ou grife, qual vale seu dinheiro (o que muda entre as duas categorias, onde o nicho ganha, onde o grife ganha, cuidado com nicho barato demais no anúncio, contratipo de nicho também existe, como decidir) — ângulo custo-benefício + Mercado Livre, gerado pela rotina automática /carrossel-diario
 - [agendado] 2026-09-10 — carrossel-contratipo-vale-a-pena — Contratipo vale a pena ou é cilada (o que é contratipo, onde ganha em custo, onde perde em fixação/projeção, cuidado com anúncio "99% igual", como escolher pela avaliação, quando vale e quando não vale a pena) — ângulo custo-benefício + Mercado Livre, gerado pela rotina automática /carrossel-diario
 - [na fila] 2026-09-09 — carrossel-perfume-importado-x-nacional — Importado x nacional, qual vale mais a pena (concentração/fixação, custo-benefício do nacional no dia a dia, projeção do importado em ocasião especial, cuidado com anúncio que só diz "importado", ter os dois no armário) — ângulo custo-benefício + Mercado Livre, gerado pela rotina automática /carrossel-diario
 - [na fila] 2026-09-08 — carrossel-decant-ou-frasco-fechado — Decant ou frasco fechado, qual vale mais a pena (o que é decant, quando testar em decant, quando investir no frasco cheio, cuidado com vendedor) — ângulo custo-benefício + Mercado Livre, gerado pela rotina automática /carrossel-diario
