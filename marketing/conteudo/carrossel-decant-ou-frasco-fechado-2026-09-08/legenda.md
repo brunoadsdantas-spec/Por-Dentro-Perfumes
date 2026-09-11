@@ -1,4 +1,4 @@
-Decant ou frasco fechado — qual vale mais a pena pro seu bolso?
+Decant ou frasco fechado: qual vale mais a pena pro seu bolso?
 
 Separamos quando cada um faz sentido: um pra testar sem gastar muito, o outro pra quem já achou o perfume favorito e quer economizar no longo prazo.
 

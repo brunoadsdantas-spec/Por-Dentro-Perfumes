@@ -1,6 +1,6 @@
 Importado sempre vale mais? Nem sempre. 🧴
 
-Concentração maior, projeção maior, preço maior — mas isso não quer dizer que o nacional fica pra trás. No dia a dia, o custo-benefício pode ser justamente o nacional. Pra ocasião especial, aí sim o importado costuma entregar mais impacto.
+Concentração maior, projeção maior, preço maior. Mas isso não quer dizer que o nacional fica pra trás. No dia a dia, o custo-benefício pode ser justamente o nacional. Pra ocasião especial, aí sim o importado costuma entregar mais impacto.
 
 Arrasta pro lado e entende quando cada um vale a pena →
 

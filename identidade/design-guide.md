@@ -47,6 +47,17 @@ Visual editorial de "grupo de ofertas" — kicker em caixa alta com tracking lar
 
 ---
 
+## Slide final (CTA)
+
+Fechamento sempre em laranja, com: título curto, subtítulo de posicionamento,
+badge preto com **Entra no grupo** (sem seta) e, logo abaixo, a linha
+**Link na bio ↑** em corpo menor e opacidade reduzida (`.cta-hint`).
+A seta pra cima é proposital: no Instagram a bio fica acima do post. Sem essa linha
+o leitor vê o botão, entende a ação e não sabe onde achar o link — o botão da
+imagem não é clicável.
+
+---
+
 ## O que NUNCA fazer
 
 - Não usar linguagem genérica de anúncio nos textos dos slides

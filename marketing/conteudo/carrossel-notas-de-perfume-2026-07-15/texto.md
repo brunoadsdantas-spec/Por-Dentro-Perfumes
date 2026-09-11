@@ -17,7 +17,7 @@ Corpo: O cheiro que você sente no primeiro minuto não é o mesmo de 3 horas de
 Numeral: 01
 Kicker: NOTA DE SAÍDA
 H2: O primeiro cheiro, que some rápido
-Corpo: Aparece assim que você borrifa e dura uns 15 minutos. Geralmente cítrico ou fresco — é a primeira impressão do perfume.
+Corpo: Aparece assim que você borrifa e dura uns 15 minutos. Geralmente cítrico ou fresco. É a primeira impressão do perfume.
 
 ## Slide 4 — nota de corpo (preto)
 Numeral: 02
@@ -34,12 +34,12 @@ Corpo: Aparece só depois de 1 a 2 horas e segura o perfume até o fim do dia. N
 ## Slide 6 — na prática (preto) [NOVO — contexto extra]
 Kicker: NA PRÁTICA
 H2: Por isso o perfume "muda" ao longo do dia
-Corpo: Não é a sua percepção enganando você — são as 3 notas aparecendo em ordem. Perfume bom é aquele que fica bom em cada uma das fases.
+Corpo: Não é a sua percepção enganando você. São as 3 notas aparecendo em ordem. Perfume bom é aquele que fica bom em cada uma das fases.
 
 ## Slide 7 — CTA FINAL (laranja)
 Headline: Agora você entende de perfume tanto quanto de oferta boa
 Subtítulo: A gente busca as melhores ofertas no Mercado Livre todo dia e manda pro grupo só o que vale.
-CTA: Entra no grupo →
+CTA: Entra no grupo (+ "Link na bio ↑" abaixo do botão) →
 
 ---
 
@@ -47,7 +47,7 @@ CTA: Entra no grupo →
 
 Você sabia que todo perfume tem 3 fases de cheiro diferentes? Isso explica por que ele "muda" ao longo do dia.
 
-Separamos o básico que todo mundo devia saber sobre nota de saída, de corpo e de fundo — sem enrolação, sem termo difícil.
+Separamos o básico que todo mundo devia saber sobre nota de saída, de corpo e de fundo, sem enrolação e sem termo difícil.
 
 Arrasta pro lado e entende de perfume de verdade 👉
 

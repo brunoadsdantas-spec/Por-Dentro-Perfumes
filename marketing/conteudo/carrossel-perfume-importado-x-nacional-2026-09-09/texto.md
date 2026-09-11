@@ -11,7 +11,7 @@
 
 **Kicker:** Perfume no Mercado Livre
 **H1:** Importado ou nacional: qual vale mais a pena?
-**Subtítulo:** Nem sempre o mais caro é o melhor pro seu bolso — entenda a diferença antes de comprar.
+**Subtítulo:** Nem sempre o mais caro é o melhor pro seu bolso. Entenda a diferença antes de comprar.
 
 ## Slide 2 — O que muda (preto)
 
@@ -29,7 +29,7 @@
 
 **Kicker:** Onde o importado ganha
 **H2:** Projeção e sofisticação pra ocasião especial
-**Corpo:** Date, festa, entrevista de emprego — se o momento pede impacto, o importado costuma entregar mais projeção e uma assinatura mais marcante.
+**Corpo:** Date, festa, entrevista de emprego: se o momento pede impacto, o importado costuma entregar mais projeção e uma assinatura mais marcante.
 
 ## Slide 5 — Fica esperto (branco)
 
@@ -47,7 +47,7 @@
 
 **Kicker:** Regra prática
 **H2:** Testando um cheiro novo? Não precisa ser importado
-**Corpo:** Pra descobrir se você gosta de uma família olfativa nova, um nacional bem avaliado já dá o recado — sem gastar alto num perfume que talvez você nem repita.
+**Corpo:** Pra descobrir se você gosta de uma família olfativa nova, um nacional bem avaliado já dá o recado, sem gastar alto num perfume que talvez você nem repita.
 
 ## Slide 8 — Estratégia (preto)
 
@@ -59,4 +59,5 @@
 
 **H1:** Importado ou nacional, o que importa é comprar sabendo o que tá levando
 **Subtítulo:** A Por Dentro Perfumes busca as melhores ofertas de perfume no Mercado Livre todo dia e manda pro grupo só o que vale.
-**Botão:** Entra no grupo →
+**Botão:** Entra no grupo
+**Abaixo do botão:** Link na bio ↑

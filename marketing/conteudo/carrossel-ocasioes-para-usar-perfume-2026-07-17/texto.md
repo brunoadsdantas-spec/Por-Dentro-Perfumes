@@ -11,7 +11,7 @@ Subtítulo: O cheiro certo muda tudo. Veja qual combina com cada momento.
 ## Slide 2 — Dia a dia (branco)
 Kicker: PRA ROTINA
 H2: Dia a dia pede leveza, não peso
-Corpo: Família cítrica é a aposta certa — cheiro fresco que não cansa. Kaiak, Acqua di Giò e CK One são clássicos que nunca erram.
+Corpo: Família cítrica é a aposta certa: cheiro fresco que não cansa. Kaiak, Acqua di Giò e CK One são clássicos que nunca erram.
 
 ## Slide 3 — Praia/verão (preto)
 Kicker: PRO CALOR
@@ -49,13 +49,13 @@ Badge: Você economiza R$405
 ## Slide 9 — CTA FINAL (laranja)
 Headline: Agora você sabe o perfume certo pra cada momento
 Subtítulo: A gente busca as melhores ofertas de perfume no Mercado Livre todo dia e manda pro grupo só o que vale.
-CTA: Entra no grupo →
+CTA: Entra no grupo (+ "Link na bio ↑" abaixo do botão) →
 
 ---
 
 ## Legenda
 
-Tem perfume certo pra cada hora do dia — e usar o errado no momento errado estraga a primeira impressão.
+Tem perfume certo pra cada hora do dia. Usar o errado no momento errado estraga a primeira impressão.
 
 Separamos as ocasiões mais comuns, o cheiro ideal pra cada uma e os perfumes mais famosos que combinam com elas.
 

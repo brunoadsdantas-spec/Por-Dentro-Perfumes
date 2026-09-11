@@ -1,4 +1,4 @@
-Você sabia que todo perfume pertence a uma família de cheiro? Cítrico, floral, amadeirado, gourmand — cada um tem sua vibe.
+Você sabia que todo perfume pertence a uma família de cheiro? Cítrico, floral, amadeirado, gourmand: cada um tem sua vibe.
 
 Separamos as 4 famílias olfativas mais comuns pra você aprender a reconhecer um perfume só de sentir.
 

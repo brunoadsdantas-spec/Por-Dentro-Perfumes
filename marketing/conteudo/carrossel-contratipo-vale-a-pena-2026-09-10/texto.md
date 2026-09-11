@@ -20,7 +20,7 @@
 
 **Kicker:** O que é
 **H2:** Contratipo não é cópia, é inspiração
-**Corpo:** A fórmula é própria, feita pra lembrar um perfume famoso na família olfativa. Não é a mesma composição do original — é uma leitura parecida, com preço bem menor.
+**Corpo:** A fórmula é própria, feita pra lembrar um perfume famoso na família olfativa. Não é a mesma composição do original. É uma leitura parecida, com preço bem menor.
 
 ## Slide 3 — Onde ele ganha (preto)
 
@@ -38,16 +38,17 @@
 
 **Kicker:** Fica esperto
 **H2:** “99% igual ao importado” é conversa de vendedor
-**Corpo:** Semelhança de cheiro existe, mas nenhum contratipo é idêntico. Desconfia de anúncio que promete cópia perfeita — isso é estratégia de venda, não fato.
+**Corpo:** Semelhança de cheiro existe, mas nenhum contratipo é idêntico. Desconfia de anúncio que promete cópia perfeita. Isso é estratégia de venda, não fato.
 
 ## Slide 6 — Regra prática (branco)
 
 **Kicker:** Regra prática
 **H2:** Contratipo bom se escolhe com avaliação, não com propaganda
-**Corpo:** Antes de comprar, olha comentário de quem já usou, fixação relatada e se o vendedor tem histórico — não confia só na comparação que tá na foto do anúncio.
+**Corpo:** Antes de comprar, olha comentário de quem já usou, fixação relatada e se o vendedor tem histórico. Não confia só na comparação que tá na foto do anúncio.
 
 ## Slide 7 — CTA FINAL (laranja)
 
-**H1:** Contratipo tem seu lugar — só não confunda com o importado que ele imita
+**H1:** Contratipo tem seu lugar. Só não confunda com o importado que ele imita
 **Subtítulo:** A Por Dentro Perfumes busca as melhores ofertas de perfume no Mercado Livre todo dia e manda pro grupo só o que vale.
-**Botão:** Entra no grupo →
+**Botão:** Entra no grupo
+**Abaixo do botão:** Link na bio ↑

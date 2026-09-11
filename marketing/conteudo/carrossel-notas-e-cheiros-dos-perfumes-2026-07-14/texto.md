@@ -17,7 +17,7 @@ Corpo: O cheiro que você sente no primeiro minuto não é o mesmo de 3 horas de
 Numeral: 01
 Kicker: NOTA DE SAÍDA
 H2: O primeiro cheiro, que some rápido
-Corpo: Aparece assim que você borrifa e dura uns 15 minutos. Geralmente cítrico ou fresco — é a primeira impressão do perfume.
+Corpo: Aparece assim que você borrifa e dura uns 15 minutos. Geralmente cítrico ou fresco. É a primeira impressão do perfume.
 
 ## Slide 4 — fundo laranja (NÚMERO 02)
 Numeral: 02
@@ -39,7 +39,7 @@ Corpo: Cheiro leve e refrescante, ótimo pro dia a dia e pro calor. É a famíli
 ## Slide 7 — fundo branco (família floral)
 Kicker: FAMÍLIAS OLFATIVAS · FLORAL
 H2: Rosa, jasmim, flor de laranjeira
-Corpo: Cheiro delicado e romântico. É a base da maioria dos perfumes femininos — e também aparece em versões unissex.
+Corpo: Cheiro delicado e romântico. É a base da maioria dos perfumes femininos e também aparece em versões unissex.
 
 ## Slide 8 — fundo laranja (família amadeirada)
 Kicker: FAMÍLIAS OLFATIVAS · AMADEIRADA
@@ -54,7 +54,7 @@ Corpo: Cheiro doce que lembra sobremesa. É a família favorita de quem gosta de
 ## Slide 10 — CTA FINAL (fundo laranja)
 Headline: Agora você entende de perfume tanto quanto de oferta boa
 Subtítulo: A gente busca as melhores ofertas no Mercado Livre todo dia e manda pro grupo só o que vale.
-CTA: Entra no grupo →
+CTA: Entra no grupo (+ "Link na bio ↑" abaixo do botão) →
 
 ---
 
@@ -62,7 +62,7 @@ CTA: Entra no grupo →
 
 Você sabia que todo perfume tem 3 fases de cheiro diferentes? E que existem famílias de aroma que se repetem em quase todo frasco?
 
-Separamos o básico que todo mundo devia saber sobre notas e famílias olfativas — sem enrolação, sem termo difícil.
+Separamos o básico que todo mundo devia saber sobre notas e famílias olfativas, sem enrolação e sem termo difícil.
 
 Arrasta pro lado e aprende a reconhecer o perfume só de sentir 👉
 

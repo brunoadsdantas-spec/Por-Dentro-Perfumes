@@ -1,4 +1,4 @@
-Perfume é uma das categorias com mais golpe no Mercado Livre — e a maioria das pessoas só percebe depois que já comprou errado.
+Perfume é uma das categorias com mais golpe no Mercado Livre. A maioria das pessoas só percebe depois que já comprou errado.
 
 Separamos os erros mais comuns que fazem alguém levar perfume falso, trocado ou sem lacre, pra você nunca mais cair nessa.
 

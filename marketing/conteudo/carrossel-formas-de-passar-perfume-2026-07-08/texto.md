@@ -41,7 +41,7 @@ Corpo: Poro aberto segura mais fragrância. Perfume pós-banho dura muito mais q
 
 ## Slide 7 — CTA FINAL (fundo laranja)
 Headline: Perfume bom não custa caro. Só custa achar a oferta certa.
-CTA: Entra no grupo e garimpa com a gente
+CTA: Entra no grupo (+ "Link na bio ↑" abaixo do botão) e aproveita com a gente
 Rodapé: @pordentroperfumes
 
 ---
@@ -50,10 +50,10 @@ Rodapé: @pordentroperfumes
 
 Você tá borrifando perfume e ele some em 2 horas? O problema não é o perfume. É o jeito de passar.
 
-Separamos 5 ajustes simples que fazem qualquer fragrância durar muito mais — sem gastar um real a mais.
+Separamos 5 ajustes simples que fazem qualquer fragrância durar muito mais, sem gastar um real a mais.
 
 Arrasta pro lado e confere 👉
 
-A Por Dentro Perfumes garimpa oferta boa de perfume no Mercado Livre todo santo dia. Você não procura nada, só aproveita. Entra no grupo (link na bio).
+A Por Dentro Perfumes busca oferta boa de perfume no Mercado Livre todo santo dia. Você não procura nada, só aproveita. Entra no grupo (link na bio).
 
 #perfume #perfumes #perfumaria #dicasdeperfume #mercadolivre #ofertas #perfumeimportado #achadosdomercadolivre #promocao #skincare #beleza #perfumesimportados #cheirobom #fixacaodeperfume #pordentroperfumes

@@ -21,7 +21,7 @@ Corpo: Cheiro leve e refrescante, ótimo pro dia a dia e pro calor. É a famíli
 ## Slide 4 — família floral (preto)
 Kicker: FAMÍLIAS OLFATIVAS
 H2: Floral: rosa, jasmim, flor de laranjeira
-Corpo: Cheiro delicado e romântico. É a base da maioria dos perfumes femininos — e também aparece em versões unissex.
+Corpo: Cheiro delicado e romântico. É a base da maioria dos perfumes femininos e também aparece em versões unissex.
 
 ## Slide 5 — família amadeirada (branco)
 Kicker: FAMÍLIAS OLFATIVAS
@@ -36,13 +36,13 @@ Corpo: Cheiro doce que lembra sobremesa. É a família favorita de quem gosta de
 ## Slide 7 — CTA FINAL (laranja)
 Headline: Agora você entende de perfume tanto quanto de oferta boa
 Subtítulo: A gente busca as melhores ofertas no Mercado Livre todo dia e manda pro grupo só o que vale.
-CTA: Entra no grupo →
+CTA: Entra no grupo (+ "Link na bio ↑" abaixo do botão) →
 
 ---
 
 ## Legenda
 
-Você sabia que todo perfume pertence a uma família de cheiro? Cítrico, floral, amadeirado, gourmand — cada um tem sua vibe.
+Você sabia que todo perfume pertence a uma família de cheiro? Cítrico, floral, amadeirado, gourmand: cada um tem sua vibe.
 
 Separamos as 4 famílias olfativas mais comuns pra você aprender a reconhecer um perfume só de sentir.
 

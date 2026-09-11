@@ -50,6 +50,17 @@ Se o tipo não estiver claro, perguntar:
 
 ## Estilo visual base
 
+### Regras de texto obrigatórias
+
+- **Sem travessão (—) em texto publicado.** Nem slide, nem legenda. Reescrever a frase
+  pra fluir sem ele (ponto final na maioria dos casos, às vezes vírgula ou dois-pontos).
+  Ponto final devolve o ritmo de frase curta da marca.
+- **Slide final sempre com o link na bio.** Badge preto `Entra no grupo` (sem seta) e,
+  abaixo, `<div class="cta-hint">Link na bio ↑</div>`. O botão da imagem não é
+  clicável, então sem essa linha ninguém acha o grupo. CSS do `.cta-hint` está em
+  qualquer `carrossel.html` recente.
+
+
 O MazyOS tem um estilo próprio — editorial, calmo, premium. Sem clip-art, sem emoji decorativo, sem gradiente arco-íris, sem template genérico de IA. `identidade/design-guide.md` sobrescreve esses padrões; quando o design-guide for vago ou estiver em branco, usar o que tá aqui (não parar pra pedir `/instalar` — o `/carrossel` funciona com defaults bons).
 
 ### Tipografia padrão

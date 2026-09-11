@@ -6,12 +6,12 @@ Paleta: capa preta (alterna com a última capa publicada, que foi branca), inter
 ## Slide 1 — CAPA (preto)
 Kicker: PERFUME NO MERCADO LIVRE
 Título: Decant ou frasco fechado: qual vale mais a pena
-Subtítulo: Antes de comprar, entenda a diferença — e qual encaixa no seu bolso.
+Subtítulo: Antes de comprar, entenda a diferença e qual encaixa no seu bolso.
 
 ## Slide 2 — Pra começar (branco)
 Kicker: PRA COMEÇAR
 H2: Decant é uma fração do perfume original
-Corpo: Não é perfume diluído nem versão inferior — é o mesmo frasco grande, só fracionado num vidro menor. Fórmula idêntica, embalagem diferente.
+Corpo: Não é perfume diluído nem versão inferior. É o mesmo frasco grande, só fracionado num vidro menor. Fórmula idêntica, embalagem diferente.
 
 ## Slide 3 — Vantagem 1 (preto)
 Kicker: VANTAGEM 1
@@ -31,7 +31,7 @@ Corpo: Achou o cheiro que usa toda semana? Frasco fechado sai mais barato no lit
 ## Slide 6 — Fica esperto (branco)
 Kicker: FICA ESPERTO
 H2: Decant também exige vendedor de confiança
-Corpo: Igual no frasco fechado, decant ruim existe — fracionado errado, sem informação clara de origem. Preço bom demais pede atenção redobrada.
+Corpo: Igual no frasco fechado, decant ruim existe: fracionado errado, sem informação clara de origem. Preço bom demais pede atenção redobrada.
 
 ## Slide 7 — Na prática (preto)
 Kicker: NA PRÁTICA
@@ -39,15 +39,15 @@ H2: Perfume novo? Decant. Perfume favorito? Frasco.
 Corpo: Regra simples: testando algo novo, comece pequeno. Já é clássico da sua rotina, invista no frasco cheio e economize no longo prazo.
 
 ## Slide 8 — CTA FINAL (laranja)
-Headline: Decant pra testar, frasco pra fidelizar — os dois valem, no momento certo
+Headline: Decant pra testar, frasco pra fidelizar. Os dois valem, no momento certo
 Subtítulo: A Por Dentro Perfumes busca as melhores ofertas de perfume no Mercado Livre todo dia e manda pro grupo só o que vale.
-CTA: Entra no grupo →
+CTA: Entra no grupo (+ "Link na bio ↑" abaixo do botão) →
 
 ---
 
 ## Legenda
 
-Decant ou frasco fechado — qual vale mais a pena pro seu bolso?
+Decant ou frasco fechado: qual vale mais a pena pro seu bolso?
 
 Separamos quando cada um faz sentido: um pra testar sem gastar muito, o outro pra quem já achou o perfume favorito e quer economizar no longo prazo.
 

@@ -1,6 +1,6 @@
 Você sabia que todo perfume tem 3 fases de cheiro diferentes? E que existem famílias de aroma que se repetem em quase todo frasco?
 
-Separamos o básico que todo mundo devia saber sobre notas e famílias olfativas — sem enrolação, sem termo difícil.
+Separamos o básico que todo mundo devia saber sobre notas e famílias olfativas, sem enrolação e sem termo difícil.
 
 Arrasta pro lado e aprende a reconhecer o perfume só de sentir 👉
 

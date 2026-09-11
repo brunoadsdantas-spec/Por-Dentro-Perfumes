@@ -11,7 +11,7 @@ Subtítulo: Veja os deslizes mais comuns e como não cair neles.
 ## Slide 2 — Erro 1 (preto)
 Kicker: ERRO 1
 H2: Confiar só na foto do anúncio
-Corpo: Foto bonita não garante nada. Muita gente anuncia um perfume conhecido e manda outro na caixa — sempre lê a descrição inteira antes de fechar.
+Corpo: Foto bonita não garante nada. Muita gente anuncia um perfume conhecido e manda outro na caixa. Sempre lê a descrição inteira antes de fechar.
 
 ## Slide 3 — Erro 2 (branco)
 Kicker: ERRO 2
@@ -26,7 +26,7 @@ Corpo: Loja com nota boa há 2 anos pode estar vendendo diferente hoje. Sempre o
 ## Slide 5 — Erro 4 (branco)
 Kicker: ERRO 4
 H2: Confundir contratipo com o perfume original
-Corpo: Contratipo é perfume inspirado, com fórmula própria — não é o importado de verdade. Não tem problema comprar, só não pode ser enganado no preço.
+Corpo: Contratipo é perfume inspirado, com fórmula própria. Não é o importado de verdade. Não tem problema comprar, só não pode ser enganado no preço.
 
 ## Slide 6 — Erro 5 (preto)
 Kicker: ERRO 5
@@ -41,13 +41,13 @@ Corpo: Perfume é uma das categorias com mais risco de falsificação. Reputaç�
 ## Slide 8 — CTA FINAL (laranja)
 Headline: Agora você sabe reconhecer perfume confiável antes de comprar
 Subtítulo: A Por Dentro Perfumes busca as melhores ofertas de perfume no Mercado Livre todo dia e manda pro grupo só o que vale.
-CTA: Entra no grupo →
+CTA: Entra no grupo (+ "Link na bio ↑" abaixo do botão) →
 
 ---
 
 ## Legenda
 
-Perfume é uma das categorias com mais golpe no Mercado Livre — e a maioria das pessoas só percebe depois que já comprou errado.
+Perfume é uma das categorias com mais golpe no Mercado Livre. A maioria das pessoas só percebe depois que já comprou errado.
 
 Separamos os erros mais comuns que fazem alguém levar perfume falso, trocado ou sem lacre, pra você nunca mais cair nessa.
 

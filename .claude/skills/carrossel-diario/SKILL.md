@@ -80,6 +80,16 @@ Seguir a proibição de `_memoria/preferencias.md` (nunca usar "garimpar"/"garim
 
 ### Passo 3 — (pulado, não se aplica — tipo 1 nunca usa foto IA)
 
+### Regras de texto obrigatórias
+
+- **Sem travessão (—) em texto publicado.** Nem slide, nem legenda. Reescrever a frase
+  pra fluir sem ele (ponto final na maioria dos casos, às vezes vírgula ou dois-pontos).
+  Ponto final devolve o ritmo de frase curta da marca.
+- **Slide final sempre com o link na bio.** Badge preto `Entra no grupo` (sem seta) e,
+  abaixo, `<div class="cta-hint">Link na bio ↑</div>`. O botão da imagem não é
+  clicável, então sem essa linha ninguém acha o grupo. CSS do `.cta-hint` está em
+  qualquer `carrossel.html` recente.
+
 ### Passo 4 — HTML + render (sem pausa)
 
 1. Criar `carrossel.html` com todos os slides, CSS inline, seguindo tipografia/paleta

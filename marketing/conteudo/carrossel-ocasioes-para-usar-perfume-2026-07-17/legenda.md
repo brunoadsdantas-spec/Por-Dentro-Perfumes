@@ -1,4 +1,4 @@
-Tem perfume certo pra cada hora do dia — e usar o errado no momento errado estraga a primeira impressão.
+Tem perfume certo pra cada hora do dia. Usar o errado no momento errado estraga a primeira impressão.
 
 Separamos as ocasiões mais comuns, o cheiro ideal pra cada uma e os perfumes mais famosos que combinam com elas.
 
