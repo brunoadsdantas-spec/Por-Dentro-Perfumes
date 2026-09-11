@@ -129,7 +129,9 @@ Operação da Por Dentro Perfumes (@pordentroperfumes): busca de ofertas de perf
 - `saidas/` — análises, documentos pontuais
 - `dados/` — arquivos a analisar (CSV, PDF, planilha)
 - `scripts/` — utilitários (gerar imagem, postar, render)
-- `site/` — página estática publicada via GitHub Pages; também hospeda publicamente as imagens dos carrosséis (`site/img/posts/<slug>/`) pro Buffer conseguir buscá-las
+- `site/` — página estática publicada via GitHub Pages; também hospeda publicamente as imagens dos carrosséis (`site/img/posts/<slug>/`) pro Buffer conseguir buscá-las.
+  O Pages publica a partir da **raiz do repositório**, então o site fica em `/site` e o
+  `SITE_URL` do `.env` precisa terminar em `/site` — sem isso as imagens dão 404 e o post falha
 - `templates/` — modelos base (skills, documentos)
 
 ## Quem sou
@@ -169,7 +171,10 @@ A gente vasculha o Mercado Livre todo dia e manda pro grupo só o que vale — o
 - [ ] WhatsApp (canal principal de divulgação)
 - [x] Automação de carrosséis
 - [x] GitHub + GitHub Pages — repositório próprio (`brunoadsdantas-spec/Por-Dentro-Perfumes`) que versiona o workspace e publica as imagens dos carrosséis numa URL pública
-- [x] Instagram via Buffer — `.env` preenchido, canal conectado, `scripts/postar-instagram.js` pronto. Falta só o primeiro post real pra validar de ponta a ponta
+- [x] Instagram via Buffer — validado de ponta a ponta em 2026-09-10: primeiro post
+  agendado com sucesso (carrossel de contratipo, 11/09 às 20h). `scripts/postar-instagram.js`
+  aceita `--em "AAAA-MM-DDTHH:MM"` pra hora marcada (horário de Brasília); sem o
+  argumento, vai pra fila do Buffer
 - [x] Rotina `/carrossel-diario` — agente de nuvem agendado, roda 13h todo dia, pesquisa tema e gera um carrossel novo pra revisão humana (nunca posta sozinho)
 
 *(Marcar conforme for instalando os MCPs)*
