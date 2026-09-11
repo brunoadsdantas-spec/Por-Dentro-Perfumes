@@ -84,8 +84,13 @@ Seguir a proibição de `_memoria/preferencias.md` (nunca usar "garimpar"/"garim
 
 1. Criar `carrossel.html` com todos os slides, CSS inline, seguindo tipografia/paleta
    de `identidade/design-guide.md` e os layouts nomeados de `/carrossel`.
-2. Criar `render.js` idêntico ao padrão já usado (ver qualquer pasta anterior em
-   `marketing/conteudo/*/render.js` como referência).
+   A fonte vem **do repositório, nunca do Google Fonts** — no `<head>`:
+   ```html
+   <link rel="stylesheet" href="../../../identidade/fonts/inter.css">
+   ```
+2. Criar `render.js` copiando de uma pasta recente em `marketing/conteudo/*/render.js`.
+   Ele espera `document.fonts.ready` e aborta se a Inter não carregou — não remover
+   essas checagens.
 3. **Setup do sandbox** (rodar sempre — barato se já estiver instalado):
    ```bash
    npm install playwright
@@ -95,6 +100,9 @@ Seguir a proibição de `_memoria/preferencias.md` (nunca usar "garimpar"/"garim
    depender disso — o sandbox do agente de nuvem pode começar vazio a cada execução.
 4. Rodar `node render.js` e conferir que `instagram/slide-01.png` até `slide-NN.png`
    foram gerados (contagem = número de slides do `texto.md`).
+   Se o script abortar com "Inter nao carregou", **não commitar os PNGs** — resolver a
+   fonte primeiro. Slide com fonte errada descaracteriza a marca e é pior que slide
+   nenhum.
 
 ### Passo 5 — Legenda (sem pausa)
 

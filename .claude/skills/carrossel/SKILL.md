@@ -54,7 +54,14 @@ O MazyOS tem um estilo próprio — editorial, calmo, premium. Sem clip-art, sem
 
 ### Tipografia padrão
 
-- **Fonte:** Inter (Google Fonts), pesos 400/500/600/700/800/900
+- **Fonte:** Inter, **hospedada no repositório** em `identidade/fonts/`. No `<head>` do
+  carrossel usar sempre:
+  ```html
+  <link rel="stylesheet" href="../../../identidade/fonts/inter.css">
+  ```
+  Nunca puxar de `fonts.googleapis.com`: o agente de nuvem da rotina diária tira o
+  screenshot antes do webfont chegar e o slide sai em Helvetica (aconteceu nos
+  carrosséis de 2026-09-09 e 2026-09-10). O arquivo local é variável, cobre 100-900.
 - **Título de capa:** 90-100px, weight 900, line-height 0.98, letter-spacing **-0.04em**
 - **H2 (slides internos):** 60-72px, weight 800, line-height 1.04, letter-spacing **-0.035em**
 - **Corpo:** 20-24px, weight 500, line-height 1.5
@@ -208,10 +215,23 @@ Se não tiver o script ainda, instruir o usuário a configurar `OPENAI_API_KEY` 
    </div>
    ```
 
-2. Criar `render.js` na mesma pasta — script Node com Playwright que abre o HTML e tira screenshot de cada `.slide` em 1080x1350. Pode reutilizar `node_modules` de uma pasta anterior (não precisa rodar `npm install` toda vez):
+2. Criar `render.js` na mesma pasta — copiar de uma pasta recente em
+   `marketing/conteudo/*/render.js`, que já traz as duas proteções obrigatórias:
+
+   - `await page.evaluate(() => document.fonts.ready)` **antes** do screenshot, mais um
+     `document.fonts.check('900 82px Inter')` que aborta se a Inter não carregou. Sem
+     isso o screenshot congela a fonte de fallback e o slide sai em Helvetica.
+   - `executablePath` do Chromium só quando `/opt/pw-browsers/chromium` existe (sandbox
+     da nuvem). Localmente o Playwright acha o browser sozinho.
+
+   Pode reutilizar `node_modules` de uma pasta anterior (não precisa rodar `npm install`
+   toda vez):
 ```bash
 NODE_PATH="<pasta-com-node_modules>/node_modules" node render.js
 ```
+
+   Depois de renderizar, **abrir o `slide-01.png` e conferir o título**: se estiver largo
+   e leve em vez de pesado e condensado, a fonte falhou — não seguir pra aprovação.
 
 3. Mostrar slide 1, 2 e o CTA final renderizados. Se aprovado, mostrar os intermediários.
 

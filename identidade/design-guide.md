@@ -28,6 +28,8 @@
 
 - **Peso do título:** Extra bold / black
 
+- **Arquivo da fonte:** Inter variável, hospedada em `identidade/fonts/` (`inter.css` + os dois `.woff2`). Todo HTML de carrossel linka esse CSS por caminho relativo — **nunca** `fonts.googleapis.com`. Buscar da rede faz o screenshot sair em Helvetica quando a fonte não chega a tempo, e o título perde todo o peso.
+
 ---
 
 ## Estilo geral
