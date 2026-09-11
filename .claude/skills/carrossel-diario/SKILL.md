@@ -139,6 +139,16 @@ marketing/conteudo/carrossel-<tema>-<YYYY-MM-DD>/
 Adicionar uma linha nova no TOPO da seção "Cobertos" de
 `marketing/conteudo/_temas-cobertos.md` com data de hoje, slug, tema e ângulo usado.
 
+A linha **começa com o status de publicação**, e o de um carrossel recém-gerado é
+sempre `[na fila]` — essa rotina nunca posta nada:
+
+```
+- [na fila] 2026-09-12 — carrossel-<tema> — <tema em uma frase> — <ângulo>
+```
+
+Quem muda pra `[agendado]` e depois `[no ar]` é a `/aprovar-post`. O campo existe
+porque nada mais no repositório registra o que já foi publicado.
+
 ### Passo 8 — Commit + push (automático, sem perguntar)
 
 ```bash

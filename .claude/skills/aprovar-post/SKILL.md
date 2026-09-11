@@ -211,6 +211,16 @@ LinkedIn: cole esse texto manualmente em https://linkedin.com/in/<seu-perfil>:
 <conteúdo de legenda-linkedin.md>
 ```
 
+### Passo 9b — Marcar o status em _temas-cobertos.md
+
+Atualizar a linha do carrossel em `marketing/conteudo/_temas-cobertos.md`:
+
+- `[na fila]` → `[agendado]` quando o Passo 7b confirmar `scheduled`
+- `[agendado]` → `[no ar]` quando o usuário confirmar que o post saiu
+
+Esse arquivo é a única fonte da verdade sobre o que já foi publicado — sem atualizar,
+dá pra oferecer repostar conteúdo que já está no feed.
+
 ### Passo 10 — Resumo
 
 Quando foi agendado (`--em`), o post **ainda não saiu** — dizer "agendado", nunca
