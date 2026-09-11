@@ -1,11 +1,14 @@
 # Carrossel — Contratipo vale a pena?
 
 > Gerado pela rotina automática `/carrossel-diario` em 2026-09-10.
-> Tipo: carrossel texto puro (9 slides). Capa em fundo escuro (preto) — a última capa
+> Tipo: carrossel texto puro (7 slides). Capa em fundo escuro (preto) — a última capa
 > publicada (importado x nacional, 2026-09-09) foi clara, então essa alterna pra escura,
 > seguindo a regra de sequência de capas do feed.
 > Ângulo: custo-benefício + Mercado Livre. Sem slide de "achado do grupo com preço real" —
 > rotina automática não tem acesso a oferta ao vivo.
+>
+> **Revisão humana (2026-09-10):** cortados os slides "Quando vale a pena" e "Quando não
+> vale" — repetiam o que os slides 3 e 4 já dizem. Carrossel foi de 9 pra 7 slides.
 
 ## Slide 1 — CAPA (preto)
 
@@ -34,7 +37,7 @@
 ## Slide 5 — Fica esperto (preto)
 
 **Kicker:** Fica esperto
-**H2:** "99% igual ao importado" é conversa de vendedor
+**H2:** “99% igual ao importado” é conversa de vendedor
 **Corpo:** Semelhança de cheiro existe, mas nenhum contratipo é idêntico. Desconfia de anúncio que promete cópia perfeita — isso é estratégia de venda, não fato.
 
 ## Slide 6 — Regra prática (branco)
@@ -43,19 +46,7 @@
 **H2:** Contratipo bom se escolhe com avaliação, não com propaganda
 **Corpo:** Antes de comprar, olha comentário de quem já usou, fixação relatada e se o vendedor tem histórico — não confia só na comparação que tá na foto do anúncio.
 
-## Slide 7 — Quando vale a pena (preto)
-
-**Kicker:** Quando vale a pena
-**H2:** Pra usar no dia a dia ou testar um estilo novo
-**Corpo:** Se o objetivo é ter um cheiro coringa pra rotina ou experimentar uma família olfativa que você nunca usou, contratipo cumpre o papel sem pesar no bolso.
-
-## Slide 8 — Quando não vale (branco)
-
-**Kicker:** Quando não vale
-**H2:** Pra ocasião importante, invista no original
-**Corpo:** Entrevista, date, evento marcante — aí a fixação e a projeção do importado fazem diferença. Guarda o contratipo pro uso comum.
-
-## Slide 9 — CTA FINAL (laranja)
+## Slide 7 — CTA FINAL (laranja)
 
 **H1:** Contratipo tem seu lugar — só não confunda com o importado que ele imita
 **Subtítulo:** A Por Dentro Perfumes busca as melhores ofertas de perfume no Mercado Livre todo dia e manda pro grupo só o que vale.
