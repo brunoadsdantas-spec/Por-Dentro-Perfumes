@@ -90,6 +90,8 @@ quinta rendem mais que segunda e sexta.
 
 - Blog: `site/.../blog/<slug>.md` — **esse workspace não tem blog**, pular
 - Carrossel: procurar `marketing/conteudo/<slug>-*` (a pasta tem sufixo de data)
+- Se não achar lá, procurar em `marketing/publicados/<slug>-*`. Achou aí, o post
+  **já foi ao ar**: parar e perguntar se é repost mesmo, em vez de agendar de novo
 - Validar que existem PNGs em `<pasta-carrossel>/instagram/slide-XX.png` (2 a 10)
 - Validar que existe `legenda.md`
 
@@ -216,7 +218,17 @@ LinkedIn: cole esse texto manualmente em https://linkedin.com/in/<seu-perfil>:
 Atualizar a linha do carrossel em `marketing/conteudo/_temas-cobertos.md`:
 
 - `[na fila]` → `[agendado]` quando o Passo 7b confirmar `scheduled`
-- `[agendado]` → `[no ar]` quando o usuário confirmar que o post saiu
+- `[agendado]` → `[no ar <dd/mm>]` quando o usuário confirmar que o post saiu
+
+**Ao marcar `[no ar]`, mover a pasta do carrossel:**
+
+```bash
+git mv marketing/conteudo/<slug>-<data> marketing/publicados/
+```
+
+`conteudo/` é a fila e `publicados/` é o histórico. Mover só quando o post saiu de
+verdade, nunca ao agendar. Não mexer em `site/img/posts/<slug>/`: é de lá que o
+Instagram carregou as imagens do post publicado.
 
 Esse arquivo é a única fonte da verdade sobre o que já foi publicado — sem atualizar,
 dá pra oferecer repostar conteúdo que já está no feed.

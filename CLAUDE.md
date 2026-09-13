@@ -125,7 +125,7 @@ Operação da Por Dentro Perfumes (@pordentroperfumes): busca de ofertas de perf
 **Estrutura de pastas:**
 - `_memoria/` — quem eu sou, como falo, o que tá em foco
 - `identidade/` — cores, fontes, logo, padrão visual
-- `marketing/` — conteúdo, campanhas (saída das skills)
+- `marketing/` — conteúdo, campanhas (saída das skills). `conteudo/` é a fila (criado ou agendado, ainda não saiu) e `publicados/` é o que já foi ao ar no Instagram
 - `saidas/` — análises, documentos pontuais
 - `dados/` — arquivos a analisar (CSV, PDF, planilha)
 - `scripts/` — utilitários (gerar imagem, postar, render)
@@ -160,7 +160,7 @@ A gente vasculha o Mercado Livre todo dia e manda pro grupo só o que vale — o
 
 ## Regras do sistema
 
-- Conteúdo novo salvar em `marketing/conteudo/<tipo>-<tema>-<data>/`
+- Conteúdo novo salvar em `marketing/conteudo/<tipo>-<tema>-<data>/`; quando o post sair de verdade, a pasta vai pra `marketing/publicados/` (quem move é a `/aprovar-post`). Agendado ainda é fila, não é publicado
 - Qualquer peça visual (carrossel, post) segue `identidade/design-guide.md`
 - Divulgação é o gargalo #1 — priorizar automações e skills que atacam isso direto
 - Antes de afirmar se o carrossel do dia (ou qualquer rotina de nuvem) rodou, sempre dar `git pull` primeiro — a rotina agendada commita e dá push direto no GitHub, então o repositório local fica desatualizado e parece que nada foi feito

@@ -66,8 +66,10 @@ agente de nuvem agendado. Produz exatamente UM carrossel por execução, sempre 
 ### Passo 1 — Contexto
 
 Ler `_memoria/preferencias.md`, `_memoria/empresa.md`, `identidade/design-guide.md`.
-Confirmar a última capa publicada (pasta mais recente em `marketing/conteudo/`) pra
-alternar cor de capa conforme a regra de `/carrossel`.
+Confirmar a última capa que vai aparecer no feed antes dessa, pra alternar cor de capa
+conforme a regra de `/carrossel`: pasta mais recente de `marketing/publicados/` (o que
+já saiu) e, se houver carrossel agendado em `marketing/conteudo/`, a capa dele, que sai
+antes dessa.
 
 ### Passo 2 — Texto (sem pausa)
 
@@ -98,7 +100,8 @@ Seguir a proibição de `_memoria/preferencias.md` (nunca usar "garimpar"/"garim
    ```html
    <link rel="stylesheet" href="../../../identidade/fonts/inter.css">
    ```
-2. Criar `render.js` copiando de uma pasta recente em `marketing/conteudo/*/render.js`.
+2. Criar `render.js` copiando de uma pasta recente em `marketing/conteudo/*/render.js`
+   (ou `marketing/publicados/*/render.js`, é o mesmo arquivo).
    Ele espera `document.fonts.ready` e aborta se a Inter não carregou — não remover
    essas checagens.
 3. **Setup do sandbox** (rodar sempre — barato se já estiver instalado):

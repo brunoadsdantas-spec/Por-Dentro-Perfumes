@@ -96,7 +96,7 @@ Estrutura de slides do resumo:
 - **Slides 2-6:** os pontos-chave do blog (1 ideia por slide, frase natural, não bullet seco)
 - **Slide final — CTA pro blog:** "Texto completo no nosso blog" + URL `<dominio>/blog/<slug>`
 
-**Capa:** seguir sequência alternada do feed (claro → foto/escuro → cor principal → repete) — checar `marketing/conteudo/` mais recente.
+**Capa:** seguir sequência alternada do feed (claro → foto/escuro → cor principal → repete) — checar a pasta mais recente entre `marketing/conteudo/` (fila) e `marketing/publicados/` (já no ar).
 
 ### Passo 4 — Legendas (3 versões)
 

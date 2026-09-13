@@ -6,13 +6,16 @@ Tudo que as skills de marketing produzem cai aqui. Skills do MazyOS já sabem on
 
 ```
 marketing/
-├── conteudo/                    saídas do /carrossel e /publicar-tema
+├── conteudo/                    FILA: criado/agendado, ainda não saiu no feed
 │   └── <tipo>-<tema>-<YYYY-MM-DD>/
 │       ├── carrossel.html
 │       ├── render.js
 │       ├── instagram/slide-XX.png
 │       ├── legenda.md
 │       └── legenda-linkedin.md
+│
+├── publicados/                  HISTÓRICO: já foi ao ar no Instagram
+│   └── <mesma estrutura de conteudo/>
 │
 ├── seo/                         saídas do /seo (8 passos)
 │   ├── 01-pesquisa-demanda.md
@@ -34,6 +37,7 @@ marketing/
 ## Como funciona
 
 - **`/carrossel` ou `/publicar-tema`** → cria pasta em `conteudo/<tipo>-<tema>-<data>/`
+- **`/aprovar-post`** → agenda no Buffer e, quando o post confirmadamente sai, move a pasta pra `publicados/`
 - **`/seo`** → preenche os 8 arquivos numerados em `seo/`
 - **`/anuncio-google`** → cria pasta em `campanhas/google-ads-<data>/` com CSVs
 - **`/relatorio-ads`** → cria arquivo em `campanhas/relatorios/<data>-relatorio.md`
