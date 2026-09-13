@@ -44,6 +44,12 @@ Visual editorial de "grupo de ofertas" — kicker em caixa alta com tracking lar
 - Border-radius dos cards: badges com cantos arredondados (ex. "você economiza R$210")
 - Botões: badge preto sólido com texto branco bold para destaques de preço/economia
 - Sombras: nenhuma, visual flat
+- **Linha de preço** (slide que compara valores): rótulo à esquerda em corpo médio com
+  opacidade reduzida, valor à direita em laranja, bold e maior, divisória fina de 1px
+  entre as linhas (a última sem divisória). Abaixo da lista, uma nota em corpo menor e
+  opacidade baixa com a ressalva da faixa. Sempre faixa ("R$ 40 a R$ 90"), nunca valor
+  cravado: preço de perfume muda toda semana e o post fica no perfil. Implementado na
+  classe `.price-list` do carrossel de decant (08/09).
 
 ---
 

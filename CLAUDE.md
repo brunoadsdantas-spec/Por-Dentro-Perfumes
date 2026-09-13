@@ -171,8 +171,9 @@ A gente vasculha o Mercado Livre todo dia e manda pro grupo só o que vale — o
 - [ ] WhatsApp (canal principal de divulgação)
 - [x] Automação de carrosséis
 - [x] GitHub + GitHub Pages — repositório próprio (`brunoadsdantas-spec/Por-Dentro-Perfumes`) que versiona o workspace e publica as imagens dos carrosséis numa URL pública
-- [x] Instagram via Buffer — validado de ponta a ponta em 2026-09-10: primeiro post
-  agendado com sucesso (carrossel de contratipo, 11/09 às 20h). `scripts/postar-instagram.js`
+- [x] Instagram via Buffer — validado de ponta a ponta em 2026-09-10: o primeiro post real
+  (carrossel de contratipo) foi ao ar em 11/09 às 20h, e em 13/09 já havia outros três
+  agendados. `scripts/postar-instagram.js`
   aceita `--em "AAAA-MM-DDTHH:MM"` pra hora marcada (horário de Brasília); sem o
   argumento, vai pra fila do Buffer
 - [x] Rotina `/carrossel-diario` — agente de nuvem agendado, roda 13h todo dia, pesquisa tema e gera um carrossel novo pra revisão humana (nunca posta sozinho)
