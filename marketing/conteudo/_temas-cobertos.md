@@ -21,6 +21,7 @@
 
 ## Cobertos
 
+- [na fila] 2026-09-14 — carrossel-perfume-durar-mais-na-pele — Como fazer o perfume durar mais na pele (hidratar antes de borrifar, pontos de calor do corpo, não esfregar o pulso, EDP x EDT no anúncio, notas amadeiradas x cítricas, guardar longe de calor e luz) — ângulo custo-benefício (perfume que fixa mais rende mais aplicações) + Mercado Livre, gerado pela rotina automática /carrossel-diario
 - [na fila] 2026-09-13 — carrossel-perfume-original-ou-falso — Como saber se o perfume é original ou falso antes de comprar (preço bem abaixo do mercado, foto genérica no anúncio, vendedor sem histórico, caixa/lacre/código de barras, frasco e cor do líquido, evolução do cheiro na pele) — ângulo custo-benefício + segurança na compra + Mercado Livre, gerado pela rotina automática /carrossel-diario
 - [na fila] 2026-09-12 — carrossel-tamanho-frasco-perfume — Tamanho de frasco ideal, 30ml, 50ml ou 100ml (preço por ml importa mais que preço total, onde cada tamanho compensa, perfume não usado também vence, como comparar anúncio no Mercado Livre pelo preço por ml) — ângulo custo-benefício + Mercado Livre, gerado pela rotina automática /carrossel-diario
 - [na fila] 2026-09-11 — carrossel-perfume-nichado-x-grife — Nicho ou grife, qual vale seu dinheiro (o que muda entre as duas categorias, onde o nicho ganha, onde o grife ganha, cuidado com nicho barato demais no anúncio, contratipo de nicho também existe, como decidir) — ângulo custo-benefício + Mercado Livre, gerado pela rotina automática /carrossel-diario
