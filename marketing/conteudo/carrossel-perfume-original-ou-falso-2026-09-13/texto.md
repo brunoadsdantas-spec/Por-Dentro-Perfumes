@@ -1,64 +1,70 @@
-# Carrossel — Perfume original ou falso, como saber antes de comprar
+# Carrossel — Perfume original ou falso: perícia na entrega
 
-> Gerado pela rotina automática `/carrossel-diario` em 2026-09-13.
-> Tipo: carrossel texto puro (8 slides). Capa em fundo escuro (preto) — o último
-> carrossel agendado no feed, na ordem de publicação (erros ao comprar, 15/09 20h),
-> tem capa clara (branco), então essa alterna pra escura, seguindo a regra de
-> sequência de capas do feed.
-> Ângulo: custo-benefício + segurança na compra + Mercado Livre. Sem slide de
-> "achado do grupo com preço real" — rotina automática não tem acesso a oferta ao vivo.
-> Tema conferido contra `_temas-cobertos.md`: "original x falsificado" está listado
-> explicitamente como tema válido ainda não coberto na "Regra de frescor". É distinto
-> de "erros comuns ao comprar" (2026-09-07, que cobre foto do anúncio, vendedor sem
-> histórico, avaliações e contratipo x original como UM item entre vários) porque aqui
-> o carrossel inteiro é dedicado aos sinais físicos e práticos de autenticidade do
-> produto em si (embalagem, lacre, frasco, cheiro).
+> Reescrito em 2026-09-16. A versão anterior (gerada em 13/09) foi descartada por
+> repetir o carrossel "erros ao comprar perfume no Mercado Livre", no ar desde 15/09:
+> foto do anúncio, vendedor sem histórico e um CTA quase idêntico.
+> Tipo: carrossel texto puro (9 slides). Capa preta, alternando com a capa branca do
+> carrossel de validade, que sai antes (17/09).
+
+## Trava de frescor (Passo 0)
+
+| Candidato | Linha coberta mais próxima | Veredito |
+|---|---|---|
+| Perícia no frasco depois que a encomenda chega | erros-comprar-perfume-mercado-livre (07/09, no ar 15/09) | APROVADO: aquele carrossel para na decisão de compra (anúncio, vendedor, avaliações). Esse começa onde ele termina, com o produto na mão. Nenhum conselho se repete, e usa lacre e código de lote, que a revisão de 13/09 tirou de lá de propósito |
+| Sinais de falsificação no anúncio (versão antiga) | erros-comprar-perfume-mercado-livre (07/09, no ar 15/09) | REPROVADO: foto genérica e vendedor sem histórico são dois slides inteiros do carrossel no ar, e o CTA era a mesma frase trocando "confiável" por "original" |
+| Como conservar perfume pra não estragar | carrossel-perfume-tem-validade (16/09, agendado 17/09) | REPROVADO: calor, luz e banheiro já são dois slides do carrossel de validade |
 
 ## Slide 1 — CAPA (preto)
 
-**Kicker:** Compra segura
-**H1:** Perfume original ou falso? Aprenda antes de comprar
-**Subtítulo:** Sinais simples que separam o perfume de verdade da imitação barata.
+**Kicker:** Chegou a encomenda
+**H1:** Seu perfume chegou. Confere antes de usar
+**Subtítulo:** Cinco minutos com o frasco na mão dizem se é original. E ainda dá tempo de devolver.
 
-## Slide 2 — Sinal 1 (branco)
+## Slide 2 — Antes de tudo (branco)
 
-**Kicker:** Sinal 1
-**H2:** Preço bem abaixo do mercado é alerta, não sorte
-**Corpo:** Perfume original tem custo de produção alto e a margem não cai tanto assim. Se o valor parece bom demais pra ser verdade, quase sempre é.
+**Kicker:** Antes de tudo
+**H2:** O prazo de devolução corre desde a entrega
+**Corpo:** Confere o frasco no dia que chegar, não semanas depois. Perfume já usado complica qualquer pedido de reembolso no Mercado Livre.
 
-## Slide 3 — Sinal 2 (preto)
+## Slide 3 — Passo 1 (preto)
 
-**Kicker:** Sinal 2
-**H2:** Foto genérica esconde o que você vai receber
-**Corpo:** Anúncio só com imagem de catálogo não mostra o frasco real. Prefere quem fotografa o próprio produto, com caixa e lacre aparecendo de verdade.
+**Kicker:** Passo 1
+**H2:** Celofane esticado, sem bolha nem dobra
+**Corpo:** Lacre de fábrica é justo e bem colado no papelão. Plástico frouxo, remendado ou com marca de calor é caixa que já foi aberta.
 
-## Slide 4 — Sinal 3 (branco)
+## Slide 4 — Passo 2 (branco)
 
-**Kicker:** Sinal 3
-**H2:** Vendedor sem histórico pesa contra ele
-**Corpo:** Reputação, tempo de loja e volume de vendas contam mais em perfume do que em quase qualquer outra categoria. Confere isso antes de fechar a compra.
+**Kicker:** Passo 2
+**H2:** Código de barras impresso, nunca colado
+**Corpo:** Na caixa original o código sai junto com a arte. Etiqueta colada por cima costuma esconder outro produto. O lote precisa estar gravado na caixa e no frasco, e bater entre os dois.
 
-## Slide 5 — Sinal 4 (preto)
+## Slide 5 — Passo 3 (preto)
 
-**Kicker:** Sinal 4
-**H2:** Caixa e lacre também denunciam
-**Corpo:** Celofane bem esticado, sem dobra nem bolha. Código de barras impresso na caixa, nunca colado. Número de lote gravado, não só escrito por cima.
+**Kicker:** Passo 3
+**H2:** Vidro sem emenda e mais pesado do que parece
+**Corpo:** Frasco original é peça única, sem linha de costura no vidro. Tampa e base levam material de verdade, não plástico oco que denuncia no primeiro toque.
 
-## Slide 6 — Sinal 5 (branco)
+## Slide 6 — Passo 4 (branco)
 
-**Kicker:** Sinal 5
-**H2:** Vidro sem costura, líquido quase transparente
-**Corpo:** Frasco original costuma ser uma peça só, sem linha de emenda visível. Marca boa usa pouco corante: o líquido fica claro, não colorido demais.
+**Kicker:** Passo 4
+**H2:** Líquido quase transparente, sem nada no fundo
+**Corpo:** Marca boa usa pouco corante. Cor forte demais, líquido turvo ou partícula parada no fundo do vidro não é característica de perfume caro.
 
-## Slide 7 — Sinal 6 (preto)
+## Slide 7 — Passo 5 (preto)
 
-**Kicker:** Sinal 6
-**H2:** O cheiro muda com o tempo, o falso não
-**Corpo:** Perfume de verdade evolui na pele ao longo das horas. Se o cheiro fica sempre igual do início ao fim e some rápido, desconfia.
+**Kicker:** Passo 5
+**H2:** O original troca de cheiro em uma hora
+**Corpo:** Perfume de verdade abre de um jeito e assenta em outro. Se o cheiro é igual do primeiro spray até sumir, e some rápido, é imitação. Testa na pele, nunca no papel.
 
-## Slide 8 — CTA FINAL (laranja)
+## Slide 8 — Deu ruim (branco)
 
-**H1:** Agora você sabe reconhecer perfume original antes de comprar
+**Kicker:** Deu ruim
+**H2:** Abre a reclamação dentro do Mercado Livre
+**Corpo:** Acerto por fora com o vendedor te deixa sem prova nenhuma. Pelo canal oficial, com foto da caixa e do frasco, o dinheiro volta.
+
+## Slide 9 — CTA FINAL (laranja)
+
+**H1:** Perfume falso se descobre em cinco minutos, se você souber olhar
 **Subtítulo:** A Por Dentro Perfumes busca as melhores ofertas de perfume no Mercado Livre todo dia e manda pro grupo só o que vale.
 **Botão:** Entra no grupo
 **Abaixo do botão:** Link na bio ↑
