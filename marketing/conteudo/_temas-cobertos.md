@@ -43,11 +43,20 @@
 2. Um tema só é válido se não aparecer aqui nem no "tema", nem no "ângulo" — mesmo com
    título diferente ("notas de perfume" e "fases do cheiro" são o MESMO tema; já houve
    uma duplicata assim em julho/2026, o carrossel foi descartado sem publicar).
-3. Preferir dúvidas reais de quem compra perfume no Mercado Livre: original x falsificado,
-   perfume importado x nacional, decant x frasco fechado, contratipo/similar (vale a pena?),
-   tamanho de frasco ideal, perfume que "gruda"/dura mais, presente de perfume, perfume por
-   estação/clima, erros comuns ao comprar perfume online, como perfume nichado se compara
-   ao "de loja". Sempre amarrando no ângulo custo-benefício + Mercado Livre.
+3. **Nenhuma lista de sugestões aqui vale como tema pré-aprovado.** Até 16/09/2026 esse
+   item trazia uma lista fixa de temas "ainda não cobertos" que envelheceu sem ninguém
+   perceber: em 14/09 a rotina gerou "perfume que dura mais na pele" porque a lista ainda
+   sugeria esse ângulo, sendo que formas-de-passar-perfume (08/07) já estava no ar dizendo a
+   mesma coisa. O carrossel foi descartado sem publicar.
+
+   Uma lista de exemplos sempre apodrece: o feed anda, a lista não. Por isso a regra agora é
+   **derivar o tema do que a seção "Cobertos" NÃO tem**, lendo ela por inteiro, em vez de
+   escolher de um menu escrito aqui. Qualquer ideia, venha de onde vier, passa pela mesma
+   checagem dos itens 1 e 2.
+
+   Continua valendo o filtro de público: dúvida real de quem compra perfume no Mercado Livre,
+   sempre no ângulo custo-benefício + Mercado Livre.
+
 4. Depois de publicar, adicionar a linha nova no topo da seção "Cobertos" com a data de
    hoje, o slug da pasta criada, o tema em uma frase e o ângulo usado (pra facilitar a
    checagem de futuras rodadas).

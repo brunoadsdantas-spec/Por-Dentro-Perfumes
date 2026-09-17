@@ -14,7 +14,8 @@ description: >
 # /carrossel-diario — Carrossel diário automático (sem pausas)
 
 Versão não-interativa de `/carrossel`, feita pra rodar sozinha uma vez por dia via
-agente de nuvem agendado. Produz exatamente UM carrossel por execução, sempre do tipo
+agente de nuvem agendado. Produz no máximo UM carrossel por execução (zero, se nenhum
+tema passar na trava de frescor do Passo 0), sempre do tipo
 "texto puro" (ver `/carrossel`), e para depois de commitar/pushar + avisar — nunca posta.
 
 ## Depende de
@@ -46,22 +47,57 @@ agente de nuvem agendado. Produz exatamente UM carrossel por execução, sempre 
 
 ### Passo 0 — Pesquisa de tema
 
-1. Ler `marketing/conteudo/_temas-cobertos.md` inteiro.
-2. Rodar 2-4 buscas via WebSearch, variando o ângulo, por exemplo:
-   - "dúvidas comuns antes de comprar perfume online"
-   - "como saber se perfume é original ou falsificado"
-   - "perfume importado x nacional diferença vale a pena"
-   - "contratipo perfume similar vale a pena"
-   - "decant de perfume o que é riscos"
-   - "perfume que dura mais tempo na pele lista"
-   - "erros comuns comprando perfume no mercado livre"
-   Ajustar as queries conforme o que já foi coberto (não repetir buscas de rodadas
-   passadas sobre o mesmo ângulo).
-3. Listar 3-5 candidatos a tema. Descartar qualquer um que coincida (tema OU ângulo)
-   com uma linha de `_temas-cobertos.md` (ver "Regra de frescor" nesse arquivo).
-4. Escolher UM tema. Preferir formato "lista/checklist" que renda 7-10 slides naturais
-   (um conceito por slide), no ângulo custo-benefício + Mercado Livre, público jovem.
-5. Definir o slug da pasta: `carrossel-<tema-em-kebab-case>-<YYYY-MM-DD>`.
+**Essa rotina roda sozinha, sem ninguém pra revisar antes do commit. O erro caro aqui não é
+deixar de publicar: é publicar tema repetido.** Em 14/09/2026 ela gerou um carrossel que
+repetia três dicas de um que já estava no ar desde 08/07. Os passos abaixo existem por causa
+disso e não são opcionais.
+
+1. Ler `marketing/conteudo/_temas-cobertos.md` inteiro, **todas as linhas**, inclusive as
+   marcadas `[descartado]` (tema descartado continua queimado) e as de julho.
+
+2. Rodar 2-4 buscas via WebSearch pra levantar dúvidas reais de quem compra perfume online.
+   **Não existe lista fixa de queries aprovadas nessa skill.** Uma lista dessas existia aqui
+   até 16/09/2026 e foi exatamente o que causou a duplicata: ela sugeria buscar "perfume que
+   dura mais tempo na pele", ângulo que já estava coberto desde julho. Montar as queries a
+   partir do que a seção "Cobertos" NÃO tem, nunca a partir de um exemplo escrito aqui.
+
+3. Levantar 3-5 candidatos.
+
+4. **Trava de frescor (obrigatória, com registro escrito).** Pra cada candidato, montar uma
+   linha no formato:
+
+   ```
+   <candidato> | linha coberta mais próxima | por que é diferente
+   ```
+
+   Regras de eliminação, nessa ordem:
+
+   - **Mesma promessa ao leitor = mesmo tema**, mesmo com título diferente. "Como fazer o
+     perfume durar mais" e "jeito certo de passar perfume" prometem a mesma coisa. Pergunta
+     de controle: *depois de ler os dois, o leitor aprendeu coisas diferentes?* Se a resposta
+     for não, o tema está queimado.
+   - Se a linha coberta mais próxima tratar do mesmo assunto, **abrir o `texto.md` dela** e
+     comparar slide a slide. A descrição de uma linha é resumida e esconde sobreposição: a
+     duplicata de 14/09 passou porque a linha de julho dizia apenas "Como e onde aplicar
+     perfume pra durar mais", enquanto os slides repetiam hidratar a pele, pontos de calor e
+     não esfregar o pulso. **Dois ou mais slides com o mesmo conselho reprovam o candidato.**
+   - Coincidência de ângulo reprova igual a coincidência de tema.
+
+5. **Se nenhum candidato sobreviver, a rotina termina sem gerar carrossel.** Não commitar
+   pasta nenhuma, não forçar um tema "quase novo", não reciclar tema descartado. Ir direto
+   pro Passo 9 e avisar que o dia não rendeu tema novo, listando os candidatos reprovados e
+   contra qual linha cada um bateu. Um dia sem post custa muito menos que um repetido no
+   feed.
+
+6. Escolher UM tema entre os aprovados. Preferir formato "lista/checklist" que renda 7-10
+   slides naturais (um conceito por slide), no ângulo custo-benefício + Mercado Livre,
+   público jovem.
+
+7. Guardar a tabela da trava de frescor: ela vai inteira pro cabeçalho do `texto.md` no
+   Passo 2, incluindo os candidatos reprovados. É o que permite auditar depois se a checagem
+   realmente aconteceu.
+
+8. Definir o slug da pasta: `carrossel-<tema-em-kebab-case>-<YYYY-MM-DD>`.
 
 ### Passo 1 — Contexto
 
@@ -79,6 +115,22 @@ citando perfumes reais quando fizer sentido; slide final CTA na cor de destaque 
 no grupo →"). **Não incluir** slide de "achado do grupo com preço real" — a rotina
 diária não tem acesso a dados de oferta ao vivo, e inventar preço seria desonesto.
 Seguir a proibição de `_memoria/preferencias.md` (nunca usar "garimpar"/"garimpo").
+
+**Cabeçalho obrigatório do `texto.md`.** Antes do primeiro slide, transcrever a tabela da
+trava de frescor do Passo 0 **inteira, com os candidatos reprovados**, nesse formato:
+
+```
+## Trava de frescor (Passo 0)
+
+| Candidato | Linha coberta mais próxima | Veredito |
+|---|---|---|
+| <tema escolhido> | <slug + data> | APROVADO: <o que o leitor aprende aqui e não lá> |
+| <reprovado> | <slug + data> | REPROVADO: <o que coincide> |
+```
+
+Sem essa tabela o carrossel não está pronto. Ela é o único rastro de que a checagem
+aconteceu: se um tema repetido escapar de novo, é por ela que dá pra descobrir em que ponto
+o raciocínio falhou.
 
 ### Passo 3 — (pulado, não se aplica — tipo 1 nunca usa foto IA)
 
@@ -181,6 +233,20 @@ Pronto pra revisão. Depois de aprovar, rode /aprovar-post localmente pra public
 Se algo falhou (render, push), o resumo deve dizer isso explicitamente em vez de fingir
 sucesso.
 
+**Se o Passo 0 não aprovou nenhum tema**, o resumo é esse, e nenhuma pasta foi criada nem
+commitada:
+
+```
+Sem carrossel hoje: nenhum tema passou na trava de frescor.
+Candidatos reprovados:
+- <candidato> — bate com <slug + data> (<o que coincide>)
+- <candidato> — bate com <slug + data> (<o que coincide>)
+Fila atual em marketing/conteudo/ segue disponível pra /aprovar-post.
+```
+
+Terminar assim é resultado válido da rotina, não falha. Não tentar de novo na mesma execução
+com o critério afrouxado.
+
 ## Regras de execução não-interativa
 
 - Nunca perguntar nada ao usuário. Se uma decisão for ambígua, escolher a opção mais
@@ -193,4 +259,6 @@ sucesso.
   esperando o usuário.
 - Se `_temas-cobertos.md` não existir por algum motivo, criar com o cabeçalho documentado
   e seguir mesmo assim (não travar a rotina por isso).
-- Uma execução = um carrossel. Não gerar mais de um por rodada.
+- Uma execução = no máximo um carrossel. Nunca mais de um por rodada, e zero quando a
+  trava de frescor do Passo 0 reprovar todos os candidatos. Terminar sem carrossel é
+  resultado válido: não relaxar o critério pra fechar a rodada com alguma coisa.
