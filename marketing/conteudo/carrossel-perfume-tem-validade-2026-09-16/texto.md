@@ -14,7 +14,7 @@ Subtítulo: Saber disso evita pagar caro por um frasco quase no fim.
 
 ## Slide 2 — Motivo 1 (preto)
 Kicker: Motivo 1
-H2: Tem prazo de verdade
+H2: Tem prazo de validade
 Corpo: Frasco lacrado aguenta de três a cinco anos sem perder qualidade. Depois de aberto, o ar e a luz começam a trabalhar contra o perfume mais cedo.
 
 ## Slide 3 — Motivo 2 (branco)
