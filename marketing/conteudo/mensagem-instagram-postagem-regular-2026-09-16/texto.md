@@ -23,7 +23,7 @@ A gente começou a postar todo dia por lá. Não é oferta repetida, é o que ni
 Essa semana sai:
 
 🔍 Quinta: perfume vence? Vence sim, e tem sinal que denuncia o frasco velho
-🧴 Sexta: perfume unissex vale a pena ou é só modinha?
+🧴 Sexta: perfume unissex vale a pena ou é furada?
 
 O grupo continua igual, oferta boa todo dia. O Instagram é o que vem junto.
 
