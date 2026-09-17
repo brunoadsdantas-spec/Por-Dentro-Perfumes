@@ -176,6 +176,11 @@ A gente vasculha o Mercado Livre todo dia e manda pro grupo só o que vale — o
   agendados. `scripts/postar-instagram.js`
   aceita `--em "AAAA-MM-DDTHH:MM"` pra hora marcada (horário de Brasília); sem o
   argumento, vai pra fila do Buffer
-- [x] Rotina `/carrossel-diario` — agente de nuvem agendado, roda 13h todo dia, pesquisa tema e gera um carrossel novo pra revisão humana (nunca posta sozinho)
+- [x] Rotina `/carrossel-diario` — agente de nuvem agendado, roda 13h todo dia, pesquisa
+  tema e gera um carrossel novo pra revisão humana (nunca posta sozinho).
+  **Regra da rotina: produza todo dia, desde que não seja repetido.** Gerar é o padrão e
+  a rotina deve esgotar os ângulos antes de desistir, mas carrossel que repete tema ou
+  conselho de algo que já foi ao ar não sai: nesse caso ela termina sem gerar nada e
+  avisa, o que conta como execução bem-sucedida, não como falha
 
 *(Marcar conforme for instalando os MCPs)*

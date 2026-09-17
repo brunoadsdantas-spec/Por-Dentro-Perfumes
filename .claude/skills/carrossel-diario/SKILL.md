@@ -83,11 +83,21 @@ disso e não são opcionais.
      não esfregar o pulso. **Dois ou mais slides com o mesmo conselho reprovam o candidato.**
    - Coincidência de ângulo reprova igual a coincidência de tema.
 
-5. **Se nenhum candidato sobreviver, a rotina termina sem gerar carrossel.** Não commitar
-   pasta nenhuma, não forçar um tema "quase novo", não reciclar tema descartado. Ir direto
-   pro Passo 9 e avisar que o dia não rendeu tema novo, listando os candidatos reprovados e
-   contra qual linha cada um bateu. Um dia sem post custa muito menos que um repetido no
-   feed.
+5. **A regra do negócio é: produza todo dia, desde que não seja repetido.** As duas
+   metades valem juntas, e nessa ordem de esforço:
+
+   - **Gerar é o padrão.** Reprovar todos os candidatos só é aceitável depois de esgotar
+     ângulos de verdade. Três candidatos parecidos entre si não são uma busca esgotada:
+     voltar ao passo 2 com queries de outra família (momento da jornada, tipo de comprador,
+     ocasião, faixa de preço, problema depois da compra) antes de concluir que o dia não
+     tem tema. Um mesmo assunto rende carrosséis diferentes quando o momento muda: "erros
+     no anúncio antes de comprar" e "perícia no frasco depois que chega" são temas
+     distintos, e foi assim que o carrossel de 13/09 foi salvo em vez de descartado.
+   - **Repetido não sai.** Esgotados os ângulos sem nenhum aprovado, a rotina termina sem
+     gerar carrossel: não commitar pasta nenhuma, não forçar um tema "quase novo", não
+     reciclar tema descartado. Ir direto pro Passo 9 e avisar que o dia não rendeu tema
+     novo, listando os candidatos reprovados e contra qual linha cada um bateu. Um dia sem
+     post custa muito menos que um repetido no feed.
 
 6. Escolher UM tema entre os aprovados. Preferir formato "lista/checklist" que renda 7-10
    slides naturais (um conceito por slide), no ângulo custo-benefício + Mercado Livre,
