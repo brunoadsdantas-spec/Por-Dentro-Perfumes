@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Carrossel — Home spray não é perfume de corpo</title>
+<link rel="stylesheet" href="../../../identidade/fonts/inter.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+  body { background: #333; }
+
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 80px 60px;
+  }
+
+  .bg-black { background: #0A0A0A; color: #FAFAF7; }
+  .bg-white { background: #FFFFFF; color: #1A1A1A; }
+  .bg-orange { background: #FF6B00; color: #0A0A0A; }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wordmark {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .bg-black .wordmark { color: rgba(255,255,255,0.9); }
+  .bg-orange .wordmark { color: rgba(10,10,10,0.85); }
+  .bg-white .wordmark { color: #1A1A1A; }
+
+  .counter {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+  }
+  .bg-black .counter { color: rgba(250,250,247,0.55); }
+  .bg-white .counter { color: rgba(26,26,26,0.5); }
+  .bg-orange .counter { color: rgba(10,10,10,0.6); }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 24px;
+  }
+  .bg-white .footer { border-top: 1px solid rgba(0,0,0,0.1); }
+  .bg-orange .footer { border-top: 1px solid rgba(10,10,10,0.15); }
+  .footer-handle { font-size: 17px; font-weight: 600; }
+  .footer-drag { font-size: 15px; font-weight: 600; letter-spacing: 0.08em; opacity: 0.7; }
+
+  .kicker {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: #FF6B00;
+  }
+  .bg-orange .kicker { color: #0A0A0A; }
+
+  .rule {
+    width: 70px;
+    height: 4px;
+    background: #FF6B00;
+    margin: 22px 0 26px;
+  }
+  .bg-orange .rule { background: #0A0A0A; }
+
+  .content { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+
+  h1 {
+    font-size: 82px;
+    font-weight: 900;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 1.06;
+    letter-spacing: -0.035em;
+  }
+
+  .subtitle {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.5;
+    opacity: 0.85;
+    max-width: 720px;
+  }
+
+  .body-text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.55;
+    margin-top: 28px;
+    max-width: 680px;
+    opacity: 0.9;
+  }
+
+  .capa-content { justify-content: center; }
+  .capa-content .kicker { margin-bottom: 26px; }
+
+  .cta-content { justify-content: center; align-items: center; text-align: center; }
+  .cta-content h1 { font-size: 56px; max-width: 800px; }
+  .cta-content .subtitle { margin: 34px auto 0; text-align: center; }
+  .cta-btn {
+    margin-top: 48px;
+    background: #0A0A0A;
+    color: #FAFAF7;
+    padding: 22px 44px;
+    border-radius: 100px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .cta-hint {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    opacity: 0.75;
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 — CAPA — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">01/09</div>
+  </div>
+  <div class="content capa-content">
+    <div class="kicker">Antes de clicar em comprar</div>
+    <h1>Home spray não é perfume de corpo</h1>
+    <div class="subtitle">Mesmo nome, cheiro parecido, produto diferente. Veja como não confundir no anúncio do Mercado Livre.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 2 — O que é — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">02/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">O que é</div>
+    <div class="rule"></div>
+    <h2>Spray feito pra perfumar o ambiente, não a pele</h2>
+    <div class="body-text">Home spray, ou spray de ambiente, borrifa no ar, no sofá, no carro. Ele não foi criado pra passar no corpo.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 3 — Por que confunde — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">03/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Por que confunde</div>
+    <div class="rule"></div>
+    <h2>A mesma fragrância vira dois produtos diferentes</h2>
+    <div class="body-text">Marca lança o perfume de corpo e o home spray com nome parecido e cheiro quase igual. No anúncio, só uma palavra pequena no título separa os dois.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 4 — Fica esperto — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">04/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Fica esperto</div>
+    <div class="rule"></div>
+    <h2>A embalagem avisa: evite contato com a pele</h2>
+    <div class="body-text">Home spray não passa pelos mesmos testes de um perfume de uso pessoal. A própria etiqueta pede pra evitar pele, olhos e mucosa.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 5 — Onde olhar — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">05/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Onde olhar</div>
+    <div class="rule"></div>
+    <h2>Categoria e descrição do anúncio contam a verdade</h2>
+    <div class="body-text">Confere se o produto está listado como perfumaria ou como aromatizador de ambiente. A ficha técnica também diz se é fragrância para ambientes ou eau de toilette/parfum.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 6 — Pista no preço — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">06/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Pista no preço</div>
+    <div class="rule"></div>
+    <h2>Home spray custa bem menos que o perfume de corpo</h2>
+    <div class="body-text">Mesmo frasco, mesma marca, preço muito mais baixo que o de costume? Antes de comemorar o achado, confirma se não é a versão pra ambiente.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 7 — Se já comprou errado — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">07/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Se já comprou errado</div>
+    <div class="rule"></div>
+    <h2>Guarda a nota e aciona o vendedor rápido</h2>
+    <div class="body-text">Receber produto diferente do anunciado não é o mesmo que simplesmente não gostar da compra. Mostra a descrição do anúncio pro vendedor e pede a troca ou o reembolso.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 8 — Regra prática — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">08/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Regra prática</div>
+    <div class="rule"></div>
+    <h2>Lê o nome completo do produto antes de clicar</h2>
+    <div class="body-text">"Home spray", "spray de ambiente" ou "aromatizador" no título já é aviso. Sem essas palavras, confirma pela categoria do anúncio antes de finalizar a compra.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 9 — CTA FINAL — laranja -->
+<div class="slide bg-orange">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">09/09</div>
+  </div>
+  <div class="content cta-content">
+    <h1>Perfume de verdade é o que a gente te manda</h1>
+    <div class="subtitle">A Por Dentro Perfumes busca e confere ofertas de perfume no Mercado Livre todo dia. Você não procura nada, só aproveita.</div>
+    <div class="cta-btn">Entra no grupo</div>
+    <div class="cta-hint">Link na bio ↑</div>
+  </div>
+  <div class="footer" style="justify-content: center; border-top: none;">
+    <div class="footer-handle">@pordentroperfumes</div>
+  </div>
+</div>
+
+<script>
+  const only = new URLSearchParams(location.search).get('slide');
+  if (only) {
+    document.querySelectorAll('.slide').forEach((el, i) => {
+      if (String(i + 1) !== only) el.style.display = 'none';
+    });
+  }
+</script>
+</body>
+</html>
