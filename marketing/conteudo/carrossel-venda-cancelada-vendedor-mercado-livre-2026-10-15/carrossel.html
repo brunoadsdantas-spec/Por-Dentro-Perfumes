@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Carrossel — Vendedor cancelou depois que você pagou. E agora?</title>
+<link rel="stylesheet" href="../../../identidade/fonts/inter.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+  body { background: #333; }
+
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 80px 60px;
+  }
+
+  .bg-black { background: #0A0A0A; color: #FAFAF7; }
+  .bg-white { background: #FFFFFF; color: #1A1A1A; }
+  .bg-orange { background: #FF6B00; color: #0A0A0A; }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wordmark {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .bg-black .wordmark { color: rgba(255,255,255,0.9); }
+  .bg-orange .wordmark { color: rgba(10,10,10,0.85); }
+  .bg-white .wordmark { color: #1A1A1A; }
+
+  .counter {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+  }
+  .bg-black .counter { color: rgba(250,250,247,0.55); }
+  .bg-white .counter { color: rgba(26,26,26,0.5); }
+  .bg-orange .counter { color: rgba(10,10,10,0.6); }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 24px;
+  }
+  .bg-white .footer { border-top: 1px solid rgba(0,0,0,0.1); }
+  .bg-orange .footer { border-top: 1px solid rgba(10,10,10,0.15); }
+  .footer-handle { font-size: 17px; font-weight: 600; }
+  .footer-drag { font-size: 15px; font-weight: 600; letter-spacing: 0.08em; opacity: 0.7; }
+
+  .kicker {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: #FF6B00;
+  }
+  .bg-orange .kicker { color: #0A0A0A; }
+
+  .rule {
+    width: 70px;
+    height: 4px;
+    background: #FF6B00;
+    margin: 22px 0 26px;
+  }
+  .bg-orange .rule { background: #0A0A0A; }
+
+  .content { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+
+  h1 {
+    font-size: 82px;
+    font-weight: 900;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 1.06;
+    letter-spacing: -0.035em;
+  }
+
+  .subtitle {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.5;
+    opacity: 0.85;
+    max-width: 720px;
+  }
+
+  .body-text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.55;
+    margin-top: 28px;
+    max-width: 680px;
+    opacity: 0.9;
+  }
+
+  .capa-content { justify-content: center; }
+  .capa-content .kicker { margin-bottom: 26px; }
+
+  .cta-content { justify-content: center; align-items: center; text-align: center; }
+  .cta-content h1 { font-size: 56px; max-width: 800px; }
+  .cta-content .subtitle { margin: 34px auto 0; text-align: center; }
+  .cta-btn {
+    margin-top: 48px;
+    background: #0A0A0A;
+    color: #FAFAF7;
+    padding: 22px 44px;
+    border-radius: 100px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .cta-hint {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    opacity: 0.75;
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 — CAPA — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">01/09</div>
+  </div>
+  <div class="content capa-content">
+    <div class="kicker">Pagou e cancelaram</div>
+    <h1>Vendedor cancelou depois que você pagou. E agora?</h1>
+    <div class="subtitle">Pagar não é garantia de receber. Saber o que esperar do estorno evita pânico e decisão errada.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 2 — Por que acontece — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">02/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Por que acontece</div>
+    <div class="rule"></div>
+    <h2>Falta de estoque é o motivo mais comum do cancelamento</h2>
+    <div class="body-text">O anúncio seguia no ar, mas o produto já tinha acabado. Em vez de avisar antes, alguns vendedores só cancelam depois que o pagamento cai.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 3 — O que muda pra você — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">03/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">O que muda pra você</div>
+    <div class="rule"></div>
+    <h2>Cancelamento antes do envio dispara estorno automático</h2>
+    <div class="body-text">Diferente de um produto que chega quebrado, aqui a compra nunca sai do depósito. O sistema já entende que você não deve pagar por algo que não foi despachado.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 4 — Prazo de verdade — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">04/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Prazo de verdade</div>
+    <div class="rule"></div>
+    <h2>Pix e saldo no Mercado Pago voltam rápido. Cartão demora mais</h2>
+    <div class="body-text">No cartão o estorno aparece na fatura, não cai direto na conta. O prazo depende do banco, então vale olhar a fatura seguinte antes de se preocupar.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 5 — Quem resolve — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">05/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Quem resolve</div>
+    <div class="rule"></div>
+    <h2>Se o vendedor usa Mercado Envios Full, quem decide o estorno é o Mercado Livre</h2>
+    <div class="body-text">A logística já é do Mercado Livre nesse modelo. Isso tira o vendedor do meio de campo e tende a deixar o processo mais rápido.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 6 — Se o dinheiro não voltou — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">06/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Se o dinheiro não voltou</div>
+    <div class="rule"></div>
+    <h2>Abrir reclamação dentro do prazo é o que protege seu direito</h2>
+    <div class="body-text">O caminho é "Tenho um problema" dentro do próprio pedido. Dá pra negociar direto com o vendedor, e se não resolver, o Mercado Livre decide com base nas regras da própria plataforma.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 7 — Não faça isso — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">07/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Não faça isso</div>
+    <div class="rule"></div>
+    <h2>Comprar de novo antes de conferir o status é erro comum</h2>
+    <div class="body-text">Primeiro confere se o pedido mostra cancelado e estorno iniciado. Comprar duas vezes sem checar é dinheiro parado em dois lugares ao mesmo tempo.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 8 — Vale a pena — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">08/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Vale a pena</div>
+    <div class="rule"></div>
+    <h2>Cancelamento chato não é motivo pra abandonar a oferta</h2>
+    <div class="body-text">O mesmo perfume pode estar em outro anúncio, com o mesmo preço ou melhor. O problema foi o vendedor, não o perfume nem a oferta que te trouxe até aqui.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 9 — CTA FINAL — laranja -->
+<div class="slide bg-orange">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">09/09</div>
+  </div>
+  <div class="content cta-content">
+    <h1>A gente confere o vendedor antes de mandar a oferta pro grupo</h1>
+    <div class="subtitle">A Por Dentro Perfumes busca as melhores ofertas de perfume no Mercado Livre todo dia e manda pro grupo só o que vale.</div>
+    <div class="cta-btn">Entra no grupo</div>
+    <div class="cta-hint">Link na bio ↑</div>
+  </div>
+  <div class="footer" style="justify-content: center; border-top: none;">
+    <div class="footer-handle">@pordentroperfumes</div>
+  </div>
+</div>
+
+<script>
+  const only = new URLSearchParams(location.search).get('slide');
+  if (only) {
+    document.querySelectorAll('.slide').forEach((el, i) => {
+      if (String(i + 1) !== only) el.style.display = 'none';
+    });
+  }
+</script>
+</body>
+</html>
