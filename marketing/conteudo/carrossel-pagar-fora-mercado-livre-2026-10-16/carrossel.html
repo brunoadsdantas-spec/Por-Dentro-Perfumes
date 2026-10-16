@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Carrossel — Pediram pra você pagar fora do Mercado Livre?</title>
+<link rel="stylesheet" href="../../../identidade/fonts/inter.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+  body { background: #333; }
+
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 80px 60px;
+  }
+
+  .bg-black { background: #0A0A0A; color: #FAFAF7; }
+  .bg-white { background: #FFFFFF; color: #1A1A1A; }
+  .bg-orange { background: #FF6B00; color: #0A0A0A; }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wordmark {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .bg-black .wordmark { color: rgba(255,255,255,0.9); }
+  .bg-orange .wordmark { color: rgba(10,10,10,0.85); }
+  .bg-white .wordmark { color: #1A1A1A; }
+
+  .counter {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+  }
+  .bg-black .counter { color: rgba(250,250,247,0.55); }
+  .bg-white .counter { color: rgba(26,26,26,0.5); }
+  .bg-orange .counter { color: rgba(10,10,10,0.6); }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 24px;
+  }
+  .bg-white .footer { border-top: 1px solid rgba(0,0,0,0.1); }
+  .bg-orange .footer { border-top: 1px solid rgba(10,10,10,0.15); }
+  .footer-handle { font-size: 17px; font-weight: 600; }
+  .footer-drag { font-size: 15px; font-weight: 600; letter-spacing: 0.08em; opacity: 0.7; }
+
+  .kicker {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: #FF6B00;
+  }
+  .bg-orange .kicker { color: #0A0A0A; }
+
+  .rule {
+    width: 70px;
+    height: 4px;
+    background: #FF6B00;
+    margin: 22px 0 26px;
+  }
+  .bg-orange .rule { background: #0A0A0A; }
+
+  .content { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+
+  h1 {
+    font-size: 82px;
+    font-weight: 900;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 1.06;
+    letter-spacing: -0.035em;
+  }
+
+  .subtitle {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.5;
+    opacity: 0.85;
+    max-width: 720px;
+  }
+
+  .body-text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.55;
+    margin-top: 28px;
+    max-width: 680px;
+    opacity: 0.9;
+  }
+
+  .capa-content { justify-content: center; }
+  .capa-content .kicker { margin-bottom: 26px; }
+
+  .numeral {
+    font-size: 260px;
+    font-weight: 800;
+    line-height: 0.9;
+    color: #FF6B00;
+    margin-bottom: 10px;
+  }
+
+  .quote-mark {
+    font-size: 120px;
+    font-weight: 800;
+    line-height: 0.6;
+    color: #FF6B00;
+    opacity: 0.5;
+    margin-bottom: 10px;
+  }
+  h2.quote-h2 { font-style: italic; }
+  .attribution {
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+
+  .cta-content { justify-content: center; align-items: center; text-align: center; }
+  .cta-content h1 { font-size: 56px; max-width: 800px; }
+  .cta-content .subtitle { margin: 34px auto 0; text-align: center; }
+  .cta-btn {
+    margin-top: 48px;
+    background: #0A0A0A;
+    color: #FAFAF7;
+    padding: 22px 44px;
+    border-radius: 100px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .cta-hint {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    opacity: 0.75;
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 — CAPA — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">01/10</div>
+  </div>
+  <div class="content capa-content">
+    <div class="kicker">Segurança no Mercado Livre</div>
+    <h1>Pediram pra você pagar fora do Mercado Livre?</h1>
+    <div class="subtitle">Essa é a maior bandeira vermelha de golpe em anúncio de perfume.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 2 — Como funciona — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">02/10</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Como funciona</div>
+    <div class="rule"></div>
+    <h2>Desconto pra sair do chat oficial é a isca mais comum</h2>
+    <div class="body-text">O vendedor diz que sem a taxa da plataforma dá pra fazer mais barato no WhatsApp ou no Pix direto. Parece vantagem. É o primeiro passo do golpe.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 3 — A isca — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">03/10</div>
+  </div>
+  <div class="content">
+    <div class="kicker">A isca</div>
+    <div class="rule"></div>
+    <h2>Quanto maior o desconto por fora, maior o motivo pra desconfiar</h2>
+    <div class="body-text">Perfume bom não precisa de atalho fora do Mercado Livre. Se o preço só existe pagando por fora, o preço não é real.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 4 — O que tá em jogo — preto — layout NÚMERO -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">04/10</div>
+  </div>
+  <div class="content">
+    <div class="kicker">O que tá em jogo</div>
+    <div class="numeral">0</div>
+    <h2>Proteção nenhuma se o pagamento sair do sistema</h2>
+    <div class="body-text">Compra Garantida, mediação de disputa e reembolso automático só valem pra pagamento feito dentro do Mercado Pago. Por fora, não existe nada disso.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 5 — Já foi pra Justiça — branco — layout CITAÇÃO -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">05/10</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Já foi pra Justiça</div>
+    <div class="quote-mark">"</div>
+    <h2 class="quote-h2">Negócio combinado fora da plataforma, o Mercado Livre não responde</h2>
+    <div class="attribution">Entendimento já usado em decisão de Justiça</div>
+    <div class="body-text">Apareceu em caso de fraude fechada por fora. Pagou fora do sistema, o risco virou só seu.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 6 — Sinal de alerta — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">06/10</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Sinal de alerta</div>
+    <div class="rule"></div>
+    <h2>Pedir seu WhatsApp nas perguntas do anúncio</h2>
+    <div class="body-text">O Mercado Livre proíbe compartilhar contato fora da plataforma. Vendedor insistindo nisso já é motivo pra fechar o anúncio.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 7 — Sinal de alerta — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">07/10</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Sinal de alerta</div>
+    <div class="rule"></div>
+    <h2>Pressa pra fechar antes de acabar o estoque</h2>
+    <div class="body-text">Golpista empurra decisão rápida pra você não checar nada. Oferta boa de verdade aguenta mais uma pergunta no chat oficial.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 8 — Na prática — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">08/10</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Na prática</div>
+    <div class="rule"></div>
+    <h2>Negocie e pague só dentro do Mercado Livre, do início ao fim</h2>
+    <div class="body-text">Chat oficial pra combinar, Mercado Pago pra pagar. Vendedor insistindo em sair dali, denuncie o anúncio em vez de aceitar.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 9 — Resumo rápido — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">09/10</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Resumo rápido</div>
+    <div class="rule"></div>
+    <h2>Desconto por fora nunca compensa o risco</h2>
+    <div class="body-text">Preço bom de verdade cabe dentro do Mercado Livre. Se não cabe, não é preço bom, é isca.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 10 — CTA FINAL — laranja -->
+<div class="slide bg-orange">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">10/10</div>
+  </div>
+  <div class="content cta-content">
+    <h1>A gente manda a oferta sempre dentro do Mercado Livre</h1>
+    <div class="subtitle">A Por Dentro Perfumes busca as melhores ofertas de perfume no Mercado Livre todo dia e manda pro grupo só o que vale.</div>
+    <div class="cta-btn">Entra no grupo</div>
+    <div class="cta-hint">Link na bio ↑</div>
+  </div>
+  <div class="footer" style="justify-content: center; border-top: none;">
+    <div class="footer-handle">@pordentroperfumes</div>
+  </div>
+</div>
+
+<script>
+  const only = new URLSearchParams(location.search).get('slide');
+  if (only) {
+    document.querySelectorAll('.slide').forEach((el, i) => {
+      if (String(i + 1) !== only) el.style.display = 'none';
+    });
+  }
+</script>
+</body>
+</html>
