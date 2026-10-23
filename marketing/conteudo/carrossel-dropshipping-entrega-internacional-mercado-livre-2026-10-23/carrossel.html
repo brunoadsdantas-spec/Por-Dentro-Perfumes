@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Carrossel — Por que esse perfume leva 30 dias pra chegar</title>
+<link rel="stylesheet" href="../../../identidade/fonts/inter.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+  body { background: #333; }
+
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 80px 60px;
+  }
+
+  .bg-black { background: #0A0A0A; color: #FAFAF7; }
+  .bg-white { background: #FFFFFF; color: #1A1A1A; }
+  .bg-orange { background: #FF6B00; color: #0A0A0A; }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wordmark {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .bg-black .wordmark { color: rgba(255,255,255,0.9); }
+  .bg-orange .wordmark { color: rgba(10,10,10,0.85); }
+  .bg-white .wordmark { color: #1A1A1A; }
+
+  .counter {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+  }
+  .bg-black .counter { color: rgba(250,250,247,0.55); }
+  .bg-white .counter { color: rgba(26,26,26,0.5); }
+  .bg-orange .counter { color: rgba(10,10,10,0.6); }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 24px;
+  }
+  .bg-white .footer { border-top: 1px solid rgba(0,0,0,0.1); }
+  .bg-orange .footer { border-top: 1px solid rgba(10,10,10,0.15); }
+  .footer-handle { font-size: 17px; font-weight: 600; }
+  .footer-drag { font-size: 15px; font-weight: 600; letter-spacing: 0.08em; opacity: 0.7; }
+
+  .kicker {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: #FF6B00;
+  }
+  .bg-orange .kicker { color: #0A0A0A; }
+
+  .rule {
+    width: 70px;
+    height: 4px;
+    background: #FF6B00;
+    margin: 22px 0 26px;
+  }
+  .bg-orange .rule { background: #0A0A0A; }
+
+  .content { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+
+  h1 {
+    font-size: 82px;
+    font-weight: 900;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 1.06;
+    letter-spacing: -0.035em;
+  }
+
+  .subtitle {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.5;
+    opacity: 0.85;
+    max-width: 720px;
+  }
+
+  .body-text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.55;
+    margin-top: 28px;
+    max-width: 680px;
+    opacity: 0.9;
+  }
+
+  .capa-content { justify-content: center; }
+  .capa-content .kicker { margin-bottom: 26px; }
+
+  .numeral {
+    font-size: 220px;
+    font-weight: 800;
+    line-height: 0.9;
+    color: #FF6B00;
+    margin-bottom: 10px;
+  }
+  .bg-white .numeral { color: #FF6B00; }
+
+  .cta-content { justify-content: center; align-items: center; text-align: center; }
+  .cta-content h1 { font-size: 56px; max-width: 800px; }
+  .cta-content .subtitle { margin: 34px auto 0; text-align: center; }
+  .cta-btn {
+    margin-top: 48px;
+    background: #0A0A0A;
+    color: #FAFAF7;
+    padding: 22px 44px;
+    border-radius: 100px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .cta-hint {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    opacity: 0.75;
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 — CAPA — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">01/09</div>
+  </div>
+  <div class="content capa-content">
+    <div class="kicker">Entrega que demora</div>
+    <h1>Por que esse perfume leva 30 dias pra chegar</h1>
+    <div class="subtitle">Preço bom com prazo gigante tem explicação. Não é sempre vendedor enrolando.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 2 — Como funciona — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">02/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Como funciona</div>
+    <div class="rule"></div>
+    <h2>Vendedor pode não ter o perfume guardado em casa</h2>
+    <div class="body-text">Muito anúncio com preço ótimo é despachado direto do fornecedor, às vezes de fora do país. O vendedor local só repassa seu pedido pra frente.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 3 — Sinal no anúncio — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">03/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Sinal no anúncio</div>
+    <div class="rule"></div>
+    <h2>Prazo de entrega bem acima do normal é a pista</h2>
+    <div class="body-text">Confere a data estimada antes de pagar. Perfume comum com prazo de 20 a 40 dias costuma vir de fornecedor de fora, não do estoque do vendedor.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 4 — Por que isso existe — branco — layout NÚMERO -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">04/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Por que isso existe</div>
+    <div class="numeral">97%</div>
+    <h2>é o quanto o Mercado Livre cobra de entrega no prazo</h2>
+    <div class="body-text">Por isso vendedor sério ajusta o prazo real do anúncio. Prazo errado pesa contra a reputação dele, não só contra você.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 5 — Isso é golpe? — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">05/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Isso é golpe?</div>
+    <div class="rule"></div>
+    <h2>Não. É um jeito permitido de vender</h2>
+    <div class="body-text">O Mercado Livre deixa vender sem estoque guardado em casa, desde que o prazo informado seja real. O problema é só quando o anúncio esconde isso.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 6 — Antes de pagar — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">06/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Antes de pagar</div>
+    <div class="rule"></div>
+    <h2>Uma pergunta no chat resolve a dúvida</h2>
+    <div class="body-text">Manda mensagem pro vendedor perguntando se o perfume já está no Brasil ou se vem de fora. A resposta fica pública pra qualquer comprador ver depois.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 7 — Vale esperar? — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">07/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Vale esperar?</div>
+    <div class="rule"></div>
+    <h2>Depende da pressa que você tem com o perfume</h2>
+    <div class="body-text">Pra presente com data marcada, prazo longo é furada. Sem pressa, pode ser o melhor preço do Mercado Livre naquele dia.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 8 — Diferença do Full — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">08/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Diferença do Full</div>
+    <div class="rule"></div>
+    <h2>Isso nunca entra no Mercado Envios Full</h2>
+    <div class="body-text">O Full exige que o produto já esteja guardado no centro de distribuição do Mercado Livre. Quem despacha direto do fornecedor nunca se encaixa nessa modalidade.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 9 — CTA FINAL — laranja -->
+<div class="slide bg-orange">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">09/09</div>
+  </div>
+  <div class="content cta-content">
+    <h1>A gente só manda pro grupo oferta com prazo claro</h1>
+    <div class="subtitle">A Por Dentro Perfumes busca as melhores ofertas de perfume no Mercado Livre todo dia e manda pro grupo só o que vale.</div>
+    <div class="cta-btn">Entra no grupo</div>
+    <div class="cta-hint">Link na bio ↑</div>
+  </div>
+  <div class="footer" style="justify-content: center; border-top: none;">
+    <div class="footer-handle">@pordentroperfumes</div>
+  </div>
+</div>
+
+<script>
+  const only = new URLSearchParams(location.search).get('slide');
+  if (only) {
+    document.querySelectorAll('.slide').forEach((el, i) => {
+      if (String(i + 1) !== only) el.style.display = 'none';
+    });
+  }
+</script>
+</body>
+</html>
