@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Carrossel — Por que seu perfume demora mais pra chegar</title>
+<link rel="stylesheet" href="../../../identidade/fonts/inter.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+  body { background: #333; }
+
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 80px 60px;
+  }
+
+  .bg-black { background: #0A0A0A; color: #FAFAF7; }
+  .bg-white { background: #FFFFFF; color: #1A1A1A; }
+  .bg-orange { background: #FF6B00; color: #0A0A0A; }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wordmark {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .bg-black .wordmark { color: rgba(255,255,255,0.9); }
+  .bg-orange .wordmark { color: rgba(10,10,10,0.85); }
+  .bg-white .wordmark { color: #1A1A1A; }
+
+  .counter {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+  }
+  .bg-black .counter { color: rgba(250,250,247,0.55); }
+  .bg-white .counter { color: rgba(26,26,26,0.5); }
+  .bg-orange .counter { color: rgba(10,10,10,0.6); }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 24px;
+  }
+  .bg-white .footer { border-top: 1px solid rgba(0,0,0,0.1); }
+  .bg-orange .footer { border-top: 1px solid rgba(10,10,10,0.15); }
+  .footer-handle { font-size: 17px; font-weight: 600; }
+  .footer-drag { font-size: 15px; font-weight: 600; letter-spacing: 0.08em; opacity: 0.7; }
+
+  .kicker {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: #FF6B00;
+  }
+  .bg-orange .kicker { color: #0A0A0A; }
+
+  .rule {
+    width: 70px;
+    height: 4px;
+    background: #FF6B00;
+    margin: 22px 0 26px;
+  }
+  .bg-orange .rule { background: #0A0A0A; }
+
+  .content { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+
+  h1 {
+    font-size: 82px;
+    font-weight: 900;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 1.06;
+    letter-spacing: -0.035em;
+  }
+
+  .subtitle {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.5;
+    opacity: 0.85;
+    max-width: 720px;
+  }
+
+  .body-text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.55;
+    margin-top: 28px;
+    max-width: 680px;
+    opacity: 0.9;
+  }
+
+  .capa-content { justify-content: center; }
+  .capa-content .kicker { margin-bottom: 26px; }
+
+  .cta-content { justify-content: center; align-items: center; text-align: center; }
+  .cta-content h1 { font-size: 56px; max-width: 800px; }
+  .cta-content .subtitle { margin: 34px auto 0; text-align: center; }
+  .cta-btn {
+    margin-top: 48px;
+    background: #0A0A0A;
+    color: #FAFAF7;
+    padding: 22px 44px;
+    border-radius: 100px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .cta-hint {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    opacity: 0.75;
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 — CAPA — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">01/09</div>
+  </div>
+  <div class="content capa-content">
+    <div class="kicker">Entrega que demora</div>
+    <h1>Por que seu perfume demora mais pra chegar</h1>
+    <div class="subtitle">Não é falta de organização do vendedor. O motivo está dentro do frasco.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 2 — O motivo — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">02/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">O motivo</div>
+    <div class="rule"></div>
+    <h2>Perfume leva álcool na fórmula</h2>
+    <div class="body-text">Álcool pega fogo fácil. Pra transportadora, isso classifica o frasco como carga que pede cuidado redobrado, diferente de capinha ou tênis.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 3 — Transporte aéreo — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">03/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Transporte aéreo</div>
+    <div class="rule"></div>
+    <h2>O avião é mais rígido com líquido inflamável do que a estrada</h2>
+    <div class="body-text">Correios e transportadoras preferem levar perfume de ônibus ou caminhão. A restrição pra voar é mais dura que pra rodar.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 4 — No meio do caminho — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">04/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">No meio do caminho</div>
+    <div class="rule"></div>
+    <h2>O modal pode trocar depois que você já pagou</h2>
+    <div class="body-text">Uma encomenda pode sair planejada de avião e, na triagem, ser redirecionada pra rodoviário por causa do frasco. O prazo estica sem aviso claro pro comprador.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 5 — Não é só o vendedor — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">05/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Não é só o vendedor</div>
+    <div class="rule"></div>
+    <h2>Nota alta e Full não escapam dessa regra</h2>
+    <div class="body-text">O Mercado Envios Full garante despacho rápido, não o modal de transporte. Um vendedor impecável pode ter o mesmo perfume redirecionado pra estrada que qualquer outro.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 6 — Não acontece com tudo — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">06/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Não acontece com tudo</div>
+    <div class="rule"></div>
+    <h2>Um carregador não tem essa restrição</h2>
+    <div class="body-text">Capinha, carregador, tênis seguem o modal mais rápido disponível sem esse entrave. Perfume corre numa pista mais lenta por ser inflamável, não por falha de ninguém.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 7 — Na prática — branco -->
+<div class="slide bg-white">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">07/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Na prática</div>
+    <div class="rule"></div>
+    <h2>Rastreio parado alguns dias não é alarme</h2>
+    <div class="body-text">Antes de abrir reclamação, lembre que o prazo de perfume tende a ser mais largo que o de outros produtos do mesmo vendedor. Compare o prazo do anúncio com produtos parecidos antes de comprar.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 8 — Quando sim é alarme — preto -->
+<div class="slide bg-black">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">08/09</div>
+  </div>
+  <div class="content">
+    <div class="kicker">Quando sim é alarme</div>
+    <div class="rule"></div>
+    <h2>Prazo informado vencido é outra história</h2>
+    <div class="body-text">Restrição de carga explica atraso dentro do razoável, não o anúncio passar da data prometida. Depois do prazo informado, vale falar com o vendedor e, se preciso, acionar o Mercado Livre.</div>
+  </div>
+  <div class="footer">
+    <div class="footer-handle">@pordentroperfumes</div>
+    <div class="footer-drag">arrasta →</div>
+  </div>
+</div>
+
+<!-- SLIDE 9 — CTA FINAL — laranja -->
+<div class="slide bg-orange">
+  <div class="header">
+    <div class="wordmark">Por Dentro Perfumes</div>
+    <div class="counter">09/09</div>
+  </div>
+  <div class="content cta-content">
+    <h1>Perfume bom vale a espera</h1>
+    <div class="subtitle">A Por Dentro Perfumes busca as melhores ofertas de perfume no Mercado Livre todo dia e manda pro grupo só o que vale.</div>
+    <div class="cta-btn">Entra no grupo</div>
+    <div class="cta-hint">Link na bio ↑</div>
+  </div>
+  <div class="footer" style="justify-content: center; border-top: none;">
+    <div class="footer-handle">@pordentroperfumes</div>
+  </div>
+</div>
+
+<script>
+  const only = new URLSearchParams(location.search).get('slide');
+  if (only) {
+    document.querySelectorAll('.slide').forEach((el, i) => {
+      if (String(i + 1) !== only) el.style.display = 'none';
+    });
+  }
+</script>
+</body>
+</html>
